@@ -1,4 +1,4 @@
-alias l='ls -la'
+alias l='ls -la --color'
 alias c='cat'
 alias v='vim'
 alias g='git'
