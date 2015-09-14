@@ -1,0 +1,16 @@
+[user]
+	email = hibariyashiki@gmail.com
+	name = Daisuke Inoue
+
+[alias]
+	b = branch
+	c = checkout
+	ps = push
+	pl = pull
+	f = fetch
+	l = log --color
+	s = status
+	d = diff
+	r = rebase
+	a = add -p
+	cm = commit
