@@ -13,4 +13,4 @@
 	d = diff
 	r = rebase
 	a = add -p
-	cm = commit
+	cm = commit -v
