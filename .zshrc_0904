@@ -1,0 +1,5 @@
+# Created by newuser for 4.3.11
+
+DOTFILES_DIR=$HOME/linux_dotfiles
+source $DOTFILES_DIR/aliases.sh
+
