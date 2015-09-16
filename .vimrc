@@ -18,6 +18,7 @@ if has('vim_starting')
    set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
    
+if 1
 " NeoBundleを初期化
 call neobundle#begin(expand('~/.vim/bundle/'))
 " インストールするプラグインをここに記述
@@ -25,6 +26,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
    NeoBundle 'Shougo/unite.vim'
    NeoBundle 'tpope/vim-fugitive'
 call neobundle#end()
+endif
+
 " ファイルタイプ別のプラグイン/インデントを有効にする
 filetype plugin indent on
 
