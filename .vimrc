@@ -1,7 +1,10 @@
 :set ignorecase smartcase
 syntax on
 
-match ErrorMsg '\s\+'
+" match ErrorMsg '\s\+'
+
+set list
+set listchars=tab:>-,trail:.,eol:v
 
 colorscheme meta5
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
