@@ -1,6 +1,7 @@
 :set ignorecase smartcase
 syntax on
 
+match ErrorMsg '\s\+'
 
 colorscheme meta5
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
