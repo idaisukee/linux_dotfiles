@@ -1,7 +1,7 @@
 [user]
 	email = hibariyashiki@gmail.com
 	name = Daisuke Inoue
-	editor = vim
+	editor = 'vim'
 
 [alias]
 	b = branch
