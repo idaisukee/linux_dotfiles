@@ -1,5 +1,7 @@
 set nocompatible
 
+set number
+
 :set ignorecase smartcase
 syntax on
 
