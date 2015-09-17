@@ -11,7 +11,8 @@ set list
 set listchars=tab:>-,trail:.,eol:v
 
 colorscheme meta5
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+"set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline+=%F
 
 if has('vim_starting')
    " 初回起動時のみruntimepathにneobundleのパスを指定する
