@@ -15,3 +15,12 @@
 	r = rebase
 	a = add -p
 	cm = commit -v
+
+[color]
+	status = auto
+
+[color "status"]
+	added = green
+	changed = blue
+	untracked = magenta
+	deleted = red
