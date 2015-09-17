@@ -11,7 +11,7 @@
 	f = fetch
 	l = log --color
 	s = status
-	d = diff
+	d = diff --color
 	r = rebase
 	a = add -p
 	cm = commit -v
