@@ -38,4 +38,6 @@ noremap <F2> :split <ENTER>
 " nnoremap <F3> <C-W> <C-W>
 map <F3> <C-w><C-w>
 noremap <F10> :q <ENTER>
+noremap <C-q> :bprevious <ENTER>
+noremap <C-j> :bnext <ENTER>
 
