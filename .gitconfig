@@ -6,6 +6,7 @@
 [alias]
 	b = branch
 	c = checkout
+	bc = 'checkout -b'
 	ps = push
 	pl = pull
 	f = fetch
