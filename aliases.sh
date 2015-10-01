@@ -13,3 +13,6 @@ alias m='mv'
 alias r='rm'
 alias p='cp'
 alias lo='locate'
+alias pb="rsync -r -e 'ssh -p 3843' ~/doc/weblog/ daisuke@27.120.106.39:/var/www/html/weblog"
+alias gb="rsync -r -e 'ssh -p 3843' daisuke@27.120.106.39:/var/www/html/weblog ~/doc/"
+
