@@ -18,4 +18,3 @@ alias gb="rsync -r -e 'ssh -p 3843' daisuke@27.120.106.39:/home/daisuke/webroot/
 alias ag='apt-get'
 alias itl='sudo apt-get install'
 alias e='echo'
-
