@@ -8,3 +8,5 @@ autoload -Uz colors
 colors
 PROMPT="${bg[green]}%d${reset_color} "
 
+EDITOR='vim'
+
