@@ -6,7 +6,8 @@ source $DOTFILES_DIR/shell_key_bind.zsh
 
 autoload -Uz colors
 colors
-PROMPT="${bg[green]}%d${reset_color} "
+PROMPT="${bg[green]}%d${reset_color}
+"
 
 export EDITOR='vim'
 export VISUAL=$EDITOR
