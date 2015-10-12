@@ -18,6 +18,9 @@ alias gb="rsync -r -e 'ssh -p 3843' daisuke@27.120.106.39:/home/daisuke/webroot/
 alias ag='apt-get'
 alias e='echo'
 
+alias val='ruby /home/daisuke/src/sleep/validate.rb '
+alias val2='ruby /home/daisuke/src/sleep/validate_2.rb '
+
 alias ls='ls -a'
 alias wi='wicd-cli'
 alias wg='w3m google.com'
