@@ -1,3 +1,4 @@
+bindkey '^A' beginning-of-line
 bindkey '^B' backward-delete-char
 bindkey '^D' backward-char
 bindkey '^N' forward-char
