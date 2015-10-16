@@ -1,3 +1,5 @@
+source /home/daisuke/linux_dotfiles/tmp_aliases.sh
+
 alias l='ls -la --color'
 alias c='cat'
 alias v='vim'
@@ -45,4 +47,6 @@ alias itl='sudo apt-get install'
 alias itlb='sudo apt-get -t "wheezy-backports" install'
 
 alias pow='upower -d | grep percentage'
+
+alias mta='. /home/daisuke/linux_dotfiles/make_tmp_aliases.sh '
 
