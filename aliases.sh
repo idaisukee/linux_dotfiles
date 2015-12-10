@@ -51,3 +51,6 @@ alias pow='upower -d | grep percentage'
 
 alias mta='. /home/daisuke/linux_dotfiles/make_tmp_aliases.sh '
 
+alias cb='xsel --clipboard --input'
+
+
