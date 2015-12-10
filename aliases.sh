@@ -1,4 +1,4 @@
-source /home/daisuke/linux_dotfiles/tmp_aliases.sh
+source $HOME/linux_dotfiles/tmp_aliases.sh
 
 alias l='ls -la --color'
 alias c='cat'
