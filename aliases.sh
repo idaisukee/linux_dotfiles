@@ -1,6 +1,10 @@
 source $HOME/linux_dotfiles/tmp_aliases.sh
 
-alias l='ls -la --color'
+if [ `uname` = Linux ]
+then
+		alias l='ls -la --color'
+fi
+
 alias c='cat'
 alias v='vim'
 alias g='git'
