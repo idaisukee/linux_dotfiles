@@ -1,7 +1,9 @@
 source $HOME/linux_dotfiles/tmp_aliases.sh
 
-if [ `uname` = Linux ]
+if [ `uname` = Darwin ]
 then
+		alias l='ls -laG'
+else
 		alias l='ls -la --color'
 fi
 
