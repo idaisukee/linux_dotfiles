@@ -10,7 +10,8 @@
 	ps = push
 	pl = pull
 	f = fetch
-	l = log --color
+	l = log --oneline -10
+	lc = log --color
 	s = status
 	d = diff --color
 	r = rebase
