@@ -25,3 +25,6 @@
 	changed = blue
 	untracked = magenta
 	deleted = red
+
+[push]
+	default = current
