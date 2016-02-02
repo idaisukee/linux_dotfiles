@@ -6,7 +6,7 @@ source $DOTFILES_DIR/shell_key_bind.zsh
 
 autoload -Uz colors
 colors
-if [ `hostname` = 'dti-vps-srv112' ]
+if [ `uname -n` = 'dti-vps-srv112' ]
 then
 	PROMPT="${bg[blue]}%d${reset_color}
 "
