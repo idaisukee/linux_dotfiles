@@ -6,8 +6,14 @@ source $DOTFILES_DIR/shell_key_bind.zsh
 
 autoload -Uz colors
 colors
-PROMPT="${bg[green]}%d${reset_color}
+if [ `hostname` = 'dti-vps-srv112' ]
+then
+	PROMPT="${bg[blue]}%d${reset_color}
 "
+else
+	PROMPT="${bg[green]}%d${reset_color}
+"
+fi
 
 export EDITOR='vim'
 export VISUAL=$EDITOR
