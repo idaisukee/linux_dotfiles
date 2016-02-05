@@ -1,4 +1,4 @@
-if [ `uname -n` = 'X40b' ]
+if [ `uname -n` = 'x40b' ]
 then
     xmodmap /home/daisuke/dvorak_keycode.map
     xmodmap /home/daisuke/switch.map
