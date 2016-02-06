@@ -52,10 +52,12 @@ alias sch='apt-cache search'
 alias schb='apt-cache -t "wheezy-backports" search'
 alias itl='sudo apt-get install'
 alias itlb='sudo apt-get -t "wheezy-backports" install'
-alias pow="upower -d | grep percentage | head -1 | awk 'END {print $2}'"
+
 
 alias mta='. /home/daisuke/linux_dotfiles/make_tmp_aliases.sh '
 
 alias cb='xsel --clipboard --input'
 
+function power(){upower -d | grep percentage | head -1 | awk 'END {print $2}'}
+alias pow=power
 
