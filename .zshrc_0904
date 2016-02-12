@@ -11,6 +11,10 @@ if [ $UN = 'dti-vps-srv112' ]
 then
 	PROMPT="${bg[blue]}%d${reset_color}
 "
+elif [ $UN = 'vagrant' ]
+then
+	PROMPT="${bg[yellow]}%d${reset_color}
+"
 else
 	PROMPT="${bg[green]}%d${reset_color}
 "
