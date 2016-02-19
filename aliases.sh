@@ -9,7 +9,7 @@ fi
 
 alias c='cat'
 alias v='vim'
-alias g='git'
+alias g='git --no-pager'
 alias gr='grep -i --color'
 alias grr='gr -r'
 alias gs='sh /home/daisuke/src/util/google-search.sh '
