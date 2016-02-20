@@ -17,6 +17,7 @@
 	r = rebase
 	a = add -p
 	cm = commit -v
+	unstage = reset HEAD
 
 [color]
 	status = auto
