@@ -14,6 +14,9 @@
 	lc = log --color
 	s = status
 	d = diff --color
+	ds = diff --color --cached
+	du = diff --color
+	df = diff --color HEAD
 	r = rebase
 	a = add -p
 	cm = commit -v
