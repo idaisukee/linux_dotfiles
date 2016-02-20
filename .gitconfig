@@ -20,6 +20,7 @@
 	r = rebase
 	a = add -p
 	cm = commit -v
+	stage = add
 	unstage = reset HEAD
 
 [color]
