@@ -255,6 +255,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
+    awful.key({modkey, "Shift"}, "s", function () awful.util.spawn("sakura") end),
+    awful.key({modkey, "Shift"}, "e", function () awful.util.spawn("emacs") end),
+
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1)      end),
