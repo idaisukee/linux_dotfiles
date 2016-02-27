@@ -112,6 +112,10 @@ function execute_command(command)
    io.close(fh)
    return str
 end
+
+rc_clock = widget({ type = "textbox" })
+rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
+
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock({ align = "right" })
@@ -195,6 +199,7 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
+        rc_clock,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
