@@ -118,7 +118,10 @@ rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+mytextclock = awful.widget.textclock(
+   { align = "right" },
+   " %Y.%m.%d %H:%M",
+   60)
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
