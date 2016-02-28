@@ -113,6 +113,10 @@ function execute_command(command)
    return str
 end
 
+function reload_rc_clock()
+   rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
+end
+
 rc_clock = widget({ type = "textbox" })
 rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
 
