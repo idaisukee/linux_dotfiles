@@ -118,7 +118,14 @@ function reload_rc_clock()
 end
 
 rc_clock = widget({ type = "textbox" })
-rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
+reload_rc_clock()
+
+mytimer = timer({ timeout = 86 })
+mytimer:add_signal("timeout", function()
+   reload_rc_clock()
+end)
+mytimer:start()
+
 
 -- {{{ Wibox
 -- Create a textclock widget
