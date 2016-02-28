@@ -6,3 +6,4 @@ alias slk='ruby /home/daisuke/src/sleep/abstract_kibun.rb '
 
 alias vag='vagrant'
 alias rs='rsync'
+alias wh='which'
