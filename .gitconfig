@@ -7,6 +7,7 @@
 	b = branch
 	c = checkout
 	bc = checkout -b
+	d = branch -d
 	ps = push
 	pl = pull
 	f = fetch
