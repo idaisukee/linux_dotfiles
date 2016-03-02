@@ -7,3 +7,4 @@ bindkey '^H' down-line-or-history
 bindkey '^T' up-line-or-history
 bindkey '^U' end-of-line
 
+bindkey '^F' history-incremental-search-backward
