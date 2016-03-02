@@ -56,6 +56,7 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 layouts =
 {
+    awful.layout.suit.max,
     awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
@@ -65,7 +66,6 @@ layouts =
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.spiral,
     awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier
 }
@@ -76,7 +76,7 @@ layouts =
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    tags[s] = awful.tag({ 1, }, s, layouts[1])
 end
 -- }}}
 
@@ -99,9 +99,40 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
                                      menu = mymainmenu })
 -- }}}
 
+
+-- Execute command and return its output. You probably won't only execute commands with one
+-- line of output
+-- derived from https://awesome.naquadah.org/wiki/Awesome_3_configuration
+function execute_command(command)
+   local fh = io.popen(command)
+   local str = ""
+   for i in fh:lines() do
+      str = str .. i
+   end
+   io.close(fh)
+   return str
+end
+
+function reload_rc_clock()
+   rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
+end
+
+rc_clock = widget({ type = "textbox" })
+reload_rc_clock()
+
+mytimer = timer({ timeout = 86 })
+mytimer:add_signal("timeout", function()
+   reload_rc_clock()
+end)
+mytimer:start()
+
+
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+mytextclock = awful.widget.textclock(
+   { align = "right" },
+   " %Y.%m.%d %H:%M",
+   60)
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
@@ -182,6 +213,7 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
+        rc_clock,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -236,6 +268,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+
+    awful.key({modkey, "Shift"}, "s", function () awful.util.spawn("sakura") end),
+    awful.key({modkey, "Shift"}, "e", function () awful.util.spawn("emacs") end),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
