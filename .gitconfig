@@ -21,6 +21,7 @@
 	r = rebase
 	a = add -p
 	cm = commit -v
+	cmm = commit -m
 	m = merge
 	stage = add
 	unstage = reset HEAD
