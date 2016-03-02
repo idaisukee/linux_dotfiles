@@ -32,3 +32,4 @@ setopt extended_history
 setopt inc_append_history
 setopt share_history
 
+zstyle ':completion:*:default' menu select=1
