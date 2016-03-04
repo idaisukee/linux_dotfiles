@@ -114,7 +114,7 @@ function execute_command(command)
 end
 
 function reload_rc_clock()
-   rc_clock.text = execute_command("ruby $PRD/src/rc/bin/display.rb")
+   rc_clock.text = " " .. execute_command("ruby $PRD/src/rc/bin/display.rb")
 end
 
 rc_clock = widget({ type = "textbox" })
@@ -139,7 +139,7 @@ mytimer:start()
 -- Create a textclock widget
 mytextclock = awful.widget.textclock(
    { align = "right" },
-   " %Y.%m.%d %H:%M",
+   " %Y.%m.%d %H:%M ",
    60)
 
 -- Create a systray
