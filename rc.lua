@@ -120,9 +120,17 @@ end
 rc_clock = widget({ type = "textbox" })
 reload_rc_clock()
 
+function reload_pow()
+   pow.text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
+end
+
+pow = widget({ type = "textbox" })
+reload_pow()
+
 mytimer = timer({ timeout = 86 })
 mytimer:add_signal("timeout", function()
    reload_rc_clock()
+   reload_pow()
 end)
 mytimer:start()
 
@@ -214,6 +222,7 @@ for s = 1, screen.count() do
         mylayoutbox[s],
         mytextclock,
         rc_clock,
+        pow,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
