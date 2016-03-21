@@ -12,6 +12,7 @@
 	pl = pull
 	f = fetch
 	l = log --oneline -10
+	ll = log --pretty=format:\"%h %an %ad %s\" -15
 	lc = log --color
 	s = status
 	d = diff --color
