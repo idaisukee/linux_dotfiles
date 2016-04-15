@@ -1,0 +1,3 @@
+- tasks:
+  - apt: name=virtualbox-guest-dkms update_cache=yes
+
