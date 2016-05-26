@@ -280,6 +280,9 @@ globalkeys = awful.util.table.join(
 
     awful.key({modkey, "Shift"}, "s", function () awful.util.spawn("sakura") end),
     awful.key({modkey, "Shift"}, "e", function () awful.util.spawn("emacs") end),
+    awful.key({modkey, "Shift"}, "f", function () awful.util.spawn("firefox") end),
+    awful.key({modkey, "Shift"}, "p", function () awful.util.spawn("pcmanfm") end),
+    awful.key({modkey, "Shift"}, "n", function () awful.util.spawn("nm-applet") end),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
