@@ -26,6 +26,8 @@
 	m = merge
 	stage = add
 	unstage = reset HEAD
+	control = add
+	uncontrol = rm --cached
 
 [color]
 	status = auto
