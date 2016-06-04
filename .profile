@@ -2,7 +2,9 @@ MAPDIR=/home/daisuke/maps
 
 if [ `uname -n` = 'x40b' ]
 then
-    xmodmap $MAPDIR/dvorak_keycode.map
+    xmodmap $MAPDIR/x40_central.map
+    xmodmap $MAPDIR/x40_peripheral.map
+    xmodmap $MAPDIR/x40_modifier.map
     xmodmap $MAPDIR/switch.map
     export PRD=$HOME
 else
