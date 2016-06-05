@@ -8,9 +8,8 @@ then
     xmodmap $MAPDIR/x40_switch.map
     export PRD=$HOME
 else
-    xmodmap $MAPDIR/dvorak_keycode_central_hhkb.map
-    xmodmap $MAPDIR/dvorak_keycode_peripheral_hhkb.map
-    xmodmap $MAPDIR/modifier_hhkb.map
+    xmodmap $MAPDIR/hhkb_central.map
+    xmodmap $MAPDIR/hhkb_peripheral.map
     export PRD=$HOME/prd
 fi
 
