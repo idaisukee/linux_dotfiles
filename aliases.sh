@@ -44,6 +44,7 @@ alias n0='nmcli c up id 00xx'
 alias nh='nmcli c up id HINES-WLAN'
 
 alias nmr='sudo service network-manager restart'
+alias N='nmr'
 alias scan='wicd-cli -ySl'
 alias wi0='wicd-cli -yScp00xx'
 alias up='sudo apt-get update; sudo apt-get upgrade; sudo apt-get update; sudo apt-get upgrade; sudo apt-get update; sudo apt-get upgrade'
