@@ -6,7 +6,7 @@ then
 else
 		alias l='ls -la --color'
 fi
-
+alias a='head'
 alias c='cat'
 alias v='vim'
 alias g='git --no-pager'
@@ -17,6 +17,7 @@ alias f='pushd'
 alias b='popd'
 alias h='history 1'
 alias s='sudo '
+alias t='tail'
 alias y='yum'
 alias m='mv'
 alias r='rm'
