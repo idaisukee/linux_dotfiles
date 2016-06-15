@@ -59,7 +59,9 @@ alias mta='. /home/daisuke/linux_dotfiles/make_tmp_aliases.sh '
 
 alias cb='xsel --clipboard --input'
 
+
+
 function power(){upower -d | grep percentage | head -1 | awk 'END {print $2}'}
 alias pow=power
 
-function newest(){ls -l | sed -E 's/\s+/ /g' | cut -f 9 -d ' ' | tail -n 1}
+function newest(){ls -clt | sed -E 's/\s+/ /g' | cut -f 9 -d ' ' | sed -E '/^\.+$/d' | sed -E '/^$/d' | head -n 1}
