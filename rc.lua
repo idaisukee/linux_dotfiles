@@ -37,7 +37,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+
+beautiful.init("/usr/share/awesome/themes/ieremii/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "x-terminal-emulator"
@@ -114,7 +115,7 @@ function execute_command(command)
 end
 
 function reload_rc_clock()
-   rc_clock.text = " " .. execute_command("ruby $PRD/src/rc/bin/display_decimal.rb")
+   rc_clock.text = " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
 end
 
 rc_clock = widget({ type = "textbox" })
