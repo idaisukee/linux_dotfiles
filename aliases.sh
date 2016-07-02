@@ -28,7 +28,7 @@ alias pb="rsync -r -e 'ssh -p 3843' ~/doc/webroot/weblog/ daisuke@27.120.106.39:
 alias gb="rsync -r -e 'ssh -p 3843' daisuke@27.120.106.39:/home/daisuke/webroot/weblog/ ~/doc/webroot/weblog"
 alias ag='apt-get'
 alias e='echo'
-
+alias date6='date +%y%m%d'
 
 alias md='mkdir '
 alias ls='ls -a'
