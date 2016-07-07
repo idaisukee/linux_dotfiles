@@ -15,4 +15,5 @@ fi
 
 export SRC=$PRD/src
 
+source rbenv.sh
 
