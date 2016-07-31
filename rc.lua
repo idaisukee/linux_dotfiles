@@ -110,6 +110,12 @@ end
 
 
 
+function reload_rc_clock()
+   rc_clock.text = " " .. execute_command("ruby $PRD/src/rdatetime/vacation_ratio.rb") .. " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
+end
+
+
+
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
