@@ -121,6 +121,17 @@ reload_rc_clock()
 
 
 
+function reload_pow()
+   pow.text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
+end
+
+
+
+pow = widget({ type = "textbox" })
+reload_pow()
+
+
+
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
