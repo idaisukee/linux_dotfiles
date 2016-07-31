@@ -132,6 +132,15 @@ reload_pow()
 
 
 
+mytimer = timer({ timeout = 86 })
+mytimer:add_signal("timeout", function()
+   reload_rc_clock()
+   reload_pow()
+end)
+mytimer:start()
+
+
+
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
