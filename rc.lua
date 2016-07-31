@@ -116,6 +116,11 @@ end
 
 
 
+rc_clock = widget({ type = "textbox" })
+reload_rc_clock()
+
+
+
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
