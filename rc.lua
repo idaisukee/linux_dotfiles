@@ -211,6 +211,15 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
+    awful.key({modkey, "Shift"}, "s", function () awful.util.spawn("sakura") end),
+    awful.key({modkey, "Shift"}, "e", function () awful.util.spawn("emacs") end),
+    awful.key({modkey, "Shift"}, "f", function () awful.util.spawn("firefox") end),
+    awful.key({modkey, "Shift"}, "p", function () awful.util.spawn("pcmanfm") end),
+    awful.key({modkey, "Shift"}, "n", function () awful.util.spawn("nm-applet") end),
+    awful.key({modkey, "Shift"}, "g", function () awful.util.spawn("google-chrome") end),
+
+
+
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
 
