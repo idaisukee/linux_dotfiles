@@ -100,19 +100,10 @@ mylayoutbox = {}
 mytaglist = {}
 mytasklist = {}
 mytasklist.buttons = awful.util.table.join(
-                     awful.button({ }, 1, function (c)
-                                              if c == client.focus then
-                                                  c.minimized = true
-                                              else
-                                                  if not c:isvisible() then
-                                                      awful.tag.viewonly(c:tags()[1])
-                                                  end
-                                                  -- This will also un-minimize
-                                                  -- the client, if needed
-                                                  client.focus = c
-                                                  c:raise()
-                                              end
-                                          end))
+   awful.button({ }, 1, function (c)
+         client.focus = c
+         c:raise()
+end))
 
 
 for s = 1, screen.count() do
