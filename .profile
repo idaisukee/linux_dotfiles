@@ -1,6 +1,6 @@
-MAPDIR=/home/daisuke/maps
+MAPDIR=$HOME/maps
 
-if [ `uname -n` = 'x40b' ]
+if [ `uname -n` = 'x40b' -o $(uname -n) = 'ieremius-ThinkPad-X40' ]
 then
     xmodmap $MAPDIR/central.map
     xmodmap $MAPDIR/x40_peripheral.map
