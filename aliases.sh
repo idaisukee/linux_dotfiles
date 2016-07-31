@@ -25,7 +25,7 @@ alias r='rm'
 alias p='cp'
 alias lo='locate'
 
-BLOG_LOCAL=$HOME/doc/weblog/single/
+BLOG_LOCAL=$PRD/doc/weblog/single/
 BLOG_SRV=/home/daisuke/doc/webroot/weblog/single/
 alias pb="rsync -av -e 'ssh -p 3843' $BLOG_LOCAL daisuke@27.120.106.39:$BLOG_SRV"
 alias gb="rsync -av -e 'ssh -p 3843' daisuke@27.120.106.39:$BLOG_SRV $BLOG_LOCAL"
