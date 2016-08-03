@@ -1,4 +1,5 @@
 MAPDIR=$HOME/maps
+DOTDIR=$HOME/linux_dotfiles
 
 if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40c' ]
 then
@@ -20,4 +21,4 @@ fi
 
 export SRC=$PRD/src
 
-source rbenv.sh
+source $DOTDIR/rbenv.sh
