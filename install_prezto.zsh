@@ -2,7 +2,7 @@ DOTFILES_DIR=$HOME/linux_dotfiles
 
 ln -s $HOME/.zplug/repos/sorin-ionescu/prezto $HOME/.zprezto
 mkdir oldzshdot
-cp .zshrc .zlogin .zlogout .zprofile .zshenv oldzshdot
+cp .zshrc oldzshdot
 
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
