@@ -1,11 +1,3 @@
-# Created by newuser for 4.3.11
-
-DOTFILES_DIR=$HOME/linux_dotfiles
-source $DOTFILES_DIR/aliases.sh
-source $DOTFILES_DIR/shell_key_bind.zsh
-
-autoload -Uz colors
-colors
 UN=`uname -n`
 if [ $UN = 'dti-vps-srv112' ]
 then
@@ -19,20 +11,6 @@ else
 	PROMPT="${bg[green]}%d${reset_color}
 "
 fi
-
-export EDITOR='vim'
-export VISUAL=$EDITOR
-export GIT_EDITOR=$EDITOR
-
-export HISTFILE=${HOME}/linux_dotfiles/.zsh_history
-export HISTSIZE=1000
-export SAVEHIST=100000
-setopt append_history
-setopt extended_history
-setopt inc_append_history
-setopt share_history
-
-zstyle ':completion:*:default' menu select=1
 
 
 ######################
