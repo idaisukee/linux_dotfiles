@@ -1,6 +1,6 @@
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]
 then
-	:
+	prompt steeef
 else
 
 UN=`uname -n`
