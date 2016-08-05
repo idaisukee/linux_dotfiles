@@ -1,0 +1,7 @@
+{
+    "prompt": "peco>",
+	  "Keymap": {
+				"C-t": "peco.SelectPrevious",
+				"C-h": "peco.SelectNext"
+	  }
+}
