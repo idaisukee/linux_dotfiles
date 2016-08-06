@@ -1,7 +1,7 @@
 MAPDIR=$HOME/maps
 DOTDIR=$HOME/linux_dotfiles
 
-if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40c' ]
+if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40d' ]
 then
     xmodmap $MAPDIR/central.map
     xmodmap $MAPDIR/x40_peripheral.map
