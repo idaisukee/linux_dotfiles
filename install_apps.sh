@@ -9,4 +9,6 @@ ruby \
 awesome \
 sakura \
 cmigemo \
-texinfo
+texinfo \
+uim-skk
+
