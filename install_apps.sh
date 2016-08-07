@@ -10,5 +10,8 @@ awesome \
 sakura \
 cmigemo \
 texinfo \
-uim-skk
-
+uim-skk \
+curl \
+fonts-migmix \
+fonts-inconsolata \
+texlive-lang-cjk
