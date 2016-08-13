@@ -12,6 +12,10 @@ cmigemo \
 texinfo \
 uim-skk \
 curl \
+upower \
 fonts-migmix \
 fonts-inconsolata \
-texlive-lang-cjk
+texlive-lang-cjk \
+xdvik-ja \
+texlive-fonts-recommended \
+texlive-fonts-extra
