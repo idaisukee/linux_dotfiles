@@ -70,3 +70,8 @@ function power(){upower -d | grep percentage | head -1 | awk 'END {print $2}'}
 alias pow=power
 
 function newest(){ls -clt | sed -E 's/\s+/ /g' | cut -f 9 -d ' ' | sed -E '/^\.+$/d' | sed -E '/^$/d' | head -n 1}
+
+function current(){
+	git branch --contains |
+		cut -d ' ' -f 2
+}
