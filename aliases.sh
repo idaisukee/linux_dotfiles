@@ -24,6 +24,7 @@ alias m='mv'
 alias r='rm'
 alias p='cp'
 alias lo='locate'
+alias cl='column'
 
 BLOG_LOCAL=$PRD/doc/weblog/single/
 BLOG_SRV=/home/daisuke/doc/webroot/weblog/single/
