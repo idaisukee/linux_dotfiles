@@ -128,9 +128,9 @@ function execute_command(command)
    return str
 end
 
-powtext = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
 pow = wibox.widget.textbox()
 function reload_pow()
+   powtext = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
    pow:set_markup(powtext)
 end
 reload_pow()
