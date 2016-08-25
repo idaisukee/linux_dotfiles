@@ -144,6 +144,15 @@ end
 reload_rc_clock()
 
 
+mytimer = timer({ timeout = 30 })
+mytimer:connect_signal("timeout", function()
+   reload_rc_clock()
+   reload_pow()
+end)
+mytimer:start()
+
+
+
 
 -- Create a wibox for each screen and add it
 mywibox = {}
