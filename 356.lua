@@ -130,16 +130,16 @@ end
 
 pow = wibox.widget.textbox()
 function reload_pow()
-   powtext = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
-   pow:set_markup(powtext)
+   pow_text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
+   pow:set_markup(pow_text)
 end
 reload_pow()
 
 
 rc_clock = wibox.widget.textbox()
 function reload_rc_clock()
-   rc_clocktext = " " .. execute_command("ruby $PRD/src/rdatetime/vacation_ratio.rb") .. " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
-   rc_clock:set_markup(rc_clocktext)
+   rc_clock_text = " " .. execute_command("ruby $PRD/src/rdatetime/vacation_ratio.rb") .. " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
+   rc_clock:set_markup(rc_clock_text)
 end
 reload_rc_clock()
 
