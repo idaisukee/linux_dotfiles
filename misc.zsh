@@ -14,3 +14,5 @@ setopt inc_append_history
 setopt share_history
 
 zstyle ':completion:*:default' menu select=1
+
+export PATH="${SRC}/util:${PATH}"
