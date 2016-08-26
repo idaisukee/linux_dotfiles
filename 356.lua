@@ -118,6 +118,40 @@ mytextclock = awful.widget.textclock(
    " %Y.%m.%d %H:%M",
    60)
 
+function execute_command(command)
+   local fh = io.popen(command)
+   local str = ""
+   for i in fh:lines() do
+      str = str .. i
+   end
+   io.close(fh)
+   return str
+end
+
+pow = wibox.widget.textbox()
+function reload_pow()
+   pow_text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
+   pow:set_markup(pow_text)
+end
+reload_pow()
+
+
+rc_clock = wibox.widget.textbox()
+function reload_rc_clock()
+   rc_clock_text = " " .. execute_command("ruby $PRD/src/rdatetime/vacation_ratio.rb") .. " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
+   rc_clock:set_markup(rc_clock_text)
+end
+reload_rc_clock()
+
+
+mytimer = timer({ timeout = 30 })
+mytimer:connect_signal("timeout", function()
+   reload_rc_clock()
+   reload_pow()
+end)
+mytimer:start()
+
+
 
 
 -- Create a wibox for each screen and add it
@@ -199,6 +233,8 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(pow)
+    right_layout:add(rc_clock)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
