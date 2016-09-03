@@ -2,7 +2,7 @@
 (define custom-preserved-default-im-name 'direct)
 (define default-im-name 'direct)
 (define enabled-im-list '(skk))
-(define enable-im-switch? #t)
+(define enable-im-switch? #f)
 (define switch-im-key '("scroll-lock"))
 (define switch-im-key? (make-key-predicate '("scroll-lock")))
 (define switch-im-skip-direct-im? #f)
