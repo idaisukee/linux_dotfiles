@@ -4,7 +4,7 @@ fpath=($HOME/.zplug/repos/mollifier/anyframe(N-/) $fpath)
 autoload -Uz anyframe-init
 anyframe-init
 
-bindkey '^F' anyframe-widget-put-history
+
 
 
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
@@ -16,5 +16,12 @@ if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]
 	zstyle ':chpwd:*' recent-dirs-default true
 
 	bindkey '^L' anyframe-widget-cdr
+fi
 
+
+if [[ $(which peco; echo $?) ]]
+then
+	bindkey '^F' anyframe-widget-put-history
+else
+	bindkey '^F' history-incremental-search-backward
 fi
