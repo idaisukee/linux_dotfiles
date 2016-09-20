@@ -19,7 +19,7 @@ if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]
 fi
 
 
-if [[ $(which peco; echo $?) ]]
+if [ $(which peco) ]
 then
 	bindkey '^F' anyframe-widget-put-history
 else
