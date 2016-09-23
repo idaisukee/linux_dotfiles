@@ -5,4 +5,5 @@ then
    source ~/.zplug/zplug
    zplug "sorin-ionescu/prezto"
    zplug "mollifier/anyframe"
+   zplug "zsh-users/zaw"
 fi

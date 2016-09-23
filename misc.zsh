@@ -16,3 +16,11 @@ setopt share_history
 zstyle ':completion:*:default' menu select=1
 
 export PATH="${SRC}/util:${PATH}"
+
+function _dabbrev_from_pane() {
+    local sources
+    sources=($(tmux capture-pane \; show-buffer \; delete-buffer | sed '/^$/d' | sed '$ d'))
+    compadd - "${sources[@]%[*/=@|]}"
+}
+zle -C dabbrev-from-pane menu-complete _dabbrev_from_pane
+bindkey '^[/' dabbrev-from-pane
