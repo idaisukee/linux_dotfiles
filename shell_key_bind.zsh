@@ -8,3 +8,5 @@ bindkey '^T' up-line-or-history
 bindkey '^U' end-of-line
 bindkey '^[d' backward-word
 bindkey '^[n' forward-word
+bindkey '^[b' backward-delete-word
+bindkey '^[r' delete-word
