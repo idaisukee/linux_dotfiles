@@ -4,7 +4,7 @@ if [ `uname` = Darwin ]
 then
 		alias l='ls -laG'
 else
-		alias l='ls -la --color'
+		alias l='ls -laF --color'
 fi
 alias a='head -n'
 alias c='cat'
