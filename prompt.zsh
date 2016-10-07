@@ -43,16 +43,16 @@ fi
 
 
 UN=`uname -n`
-COLOR=green
 if [ $UN = 'dti-vps-srv112' ]
 then
-PROMPT1="${bg[blue]}%d${reset_color}"
+COLOR=blue
 elif [ $UN = 'vagrant' ]
 then
-PROMPT1="${bg[yellow]}%d${reset_color}"
+COLOR=yellow
 else
-PROMPT1="${bg[$COLOR]}%d${reset_color}"
+COLOR=red
 fi
+PROMPT1="${bg[$COLOR]}%d${reset_color}"
 PROMPT2=$'$(vcs_info_wrapper)
 '
 
