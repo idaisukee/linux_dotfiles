@@ -50,7 +50,7 @@ elif [ $UN = 'vagrant' ]
 then
 COLOR=yellow
 else
-COLOR=red
+COLOR=green
 fi
 PROMPT1="${bg[$COLOR]}%d${reset_color}"
 PROMPT2=$'$(vcs_info_wrapper)
