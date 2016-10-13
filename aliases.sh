@@ -76,3 +76,14 @@ function current(){
 	git branch --contains |
 		cut -d ' ' -f 2
 }
+
+
+function times(){
+	int=$1
+	command=$2
+	for i in $(seq 1 $int)
+	do
+		eval $command
+	done
+}
+
