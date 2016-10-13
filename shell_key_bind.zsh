@@ -6,6 +6,7 @@ bindkey '^R' delete-char-or-list
 bindkey '^H' down-line-or-history
 bindkey '^T' up-line-or-history
 bindkey '^U' end-of-line
+bindkey '^I' complete-word
 bindkey '^[d' backward-word
 bindkey '^[n' forward-word
 bindkey '^[b' backward-delete-word
