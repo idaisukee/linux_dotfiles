@@ -87,3 +87,17 @@ function times(){
 	done
 }
 
+function pr(){
+	str=$1
+	arg="pr "$str
+	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb)
+	echo $out
+}
+
+
+function gc(){
+	str=$1
+	arg="g "$str
+	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb)
+	echo $out
+}
