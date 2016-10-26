@@ -4,7 +4,7 @@ if [ `uname` = Darwin ]
 then
 		alias l='ls -laG'
 else
-		alias l='ls -la --color'
+		alias l='ls -laF --color'
 fi
 alias a='head -n'
 alias c='cat'
@@ -25,13 +25,13 @@ alias r='rm'
 alias p='cp'
 alias lo='locate'
 alias cl='column'
+alias vim='vi'
 
 BLOG_LOCAL=$PRD/doc/weblog/single/
 BLOG_SRV=/home/daisuke/doc/webroot/weblog/single/
 alias pb="rsync -av -e 'ssh -p 3843' $BLOG_LOCAL daisuke@27.120.106.39:$BLOG_SRV"
 alias gb="rsync -av -e 'ssh -p 3843' daisuke@27.120.106.39:$BLOG_SRV $BLOG_LOCAL"
 #alias gb="rsync -r -e 'ssh -p 3843' daisuke@27.120.106.39:/home/daisuke/webroot/weblog/ ~/doc/webroot/weblog"
-alias ag='apt-get'
 alias e='echo'
 alias date6='date +%y%m%d'
 
@@ -75,4 +75,29 @@ function newest(){ls -clt | sed -E 's/\s+/ /g' | cut -f 9 -d ' ' | sed -E '/^\.+
 function current(){
 	git branch --contains |
 		cut -d ' ' -f 2
+}
+
+
+function times(){
+	int=$1
+	command=$2
+	for i in $(seq 1 $int)
+	do
+		eval $command
+	done
+}
+
+function pr(){
+	str=$1
+	arg="pr "$str
+	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb)
+	echo $out
+}
+
+
+function gc(){
+	str=$1
+	arg="g "$str
+	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb)
+	echo $out
 }

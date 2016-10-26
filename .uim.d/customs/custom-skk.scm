@@ -5,7 +5,7 @@
 (define skk-candidate-op-count 5)
 (define skk-nr-candidate-max 7)
 (define skk-widgets '(widget_skk_input_mode widget_skk_kana_input_method))
-(define default-widget_skk_input_mode 'action_skk_hiragana)
+(define default-widget_skk_input_mode 'action_skk_latin)
 (define skk-input-mode-actions '(action_skk_latin action_skk_hiragana action_skk_katakana action_skk_hankana action_skk_wide_latin))
 (define default-widget_skk_kana_input_method 'action_skk_roma)
 (define skk-kana-input-method-actions '(action_skk_roma action_skk_azik action_skk_act action_skk_kzik))

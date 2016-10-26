@@ -138,7 +138,7 @@ reload_pow()
 
 rc_clock = wibox.widget.textbox()
 function reload_rc_clock()
-   rc_clock_text = " " .. execute_command("ruby $PRD/src/rdatetime/vacation_ratio.rb") .. " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
+   rc_clock_text = " " .. execute_command("ruby $PRD/src/rdatetime/display.rb")
    rc_clock:set_markup(rc_clock_text)
 end
 reload_rc_clock()

@@ -10,6 +10,7 @@ then
 else
     xmodmap $MAPDIR/central.map
     xmodmap $MAPDIR/hhkb_peripheral.map
+    xmodmap $MAPDIR/hhkb_switch.map
 fi
 
 if [ -e $HOME/prd ]
@@ -20,5 +21,5 @@ else
 fi
 
 export SRC=$PRD/src
-
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 source $DOTDIR/rbenv.sh

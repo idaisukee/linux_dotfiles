@@ -1,3 +1,4 @@
 *.swp
 .zsh_history
 const
+.config/chromium

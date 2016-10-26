@@ -40,6 +40,21 @@ if [ -n "$vcs_info_msg_0_" ]; then
 echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
 fi
 }
-RPROMPT=$'$(vcs_info_wrapper)'
 
+
+UN=`uname -n`
+if [ $UN = 'dti-vps-srv112' ]
+then
+COLOR=blue
+elif [ $UN = 'vagrant' ]
+then
+COLOR=yellow
+else
+COLOR=green
+fi
+PROMPT_1="${bg[$COLOR]}%d $USER $UN ${reset_color}"
+PROMPT_2=$'$(vcs_info_wrapper)
+'
+
+PROMPT=${PROMPT_1}${PROMPT_2}
 fi
