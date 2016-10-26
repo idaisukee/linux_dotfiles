@@ -1,4 +1,5 @@
 sudo apt-get install \
+xsel \
 mercurial \
 tmux \
 git \
