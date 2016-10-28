@@ -102,6 +102,14 @@ function gc(){
 	echo $out
 }
 
+
+function gcc(){
+	str=$1
+	arg="g "$str
+	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb -c)
+	echo $out
+}
+
 mod_dir=$HOME/.zplug/repos/sorin-ionescu/prezto/modules/archive/functions
 alias lsarchive="zsh $mod_dir/lsarchive"
 alias unarchive="zsh $mod_dir/unarchive"
