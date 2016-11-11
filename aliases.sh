@@ -31,6 +31,14 @@ BLOG_LOCAL=$PRD/doc/weblog/single/
 BLOG_SRV=/home/daisuke/doc/webroot/weblog/single/
 alias pb="rsync -av -e 'ssh -p 3843' $BLOG_LOCAL daisuke@27.120.106.39:$BLOG_SRV"
 alias gb="rsync -av -e 'ssh -p 3843' daisuke@27.120.106.39:$BLOG_SRV $BLOG_LOCAL"
+
+P_BLOG_LOCAL=$PRD/doc/weblog/prd/
+P_BLOG_SRV=/home/daisuke/doc/webroot/weblog/prd/
+alias ppb="rsync -av -e 'ssh -p 3843' $P_BLOG_LOCAL daisuke@27.120.106.39:$P_BLOG_SRV"
+alias pgb="rsync -av -e 'ssh -p 3843' daisuke@27.120.106.39:$P_BLOG_SRV $P_BLOG_LOCAL"
+
+
+
 #alias gb="rsync -r -e 'ssh -p 3843' daisuke@27.120.106.39:/home/daisuke/webroot/weblog/ ~/doc/webroot/weblog"
 alias e='echo'
 alias date6='date +%y%m%d'
