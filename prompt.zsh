@@ -52,7 +52,7 @@ COLOR=yellow
 else
 COLOR=green
 fi
-PROMPT_1="${bg[$COLOR]}%d $USER $UN ${reset_color}"
+PROMPT_1="${bg[$COLOR]}%d${reset_color} ${bg[$COLOR]}$USER${reset_color} ${bg[$COLOR]}$UN${reset_color} "
 PROMPT_2=$'$(vcs_info_wrapper)
 '
 
