@@ -1,3 +1,5 @@
+MAPDIR=$HOME/maps
+
 if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40d' ]
 then
     xmodmap $MAPDIR/central.map
