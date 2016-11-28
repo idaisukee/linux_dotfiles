@@ -14,6 +14,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zplug/repos/zsh-users/zaw/zaw.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zplug/repos/zsh-users/zaw/zaw.zsh"
 fi
 
+if [[ -s "${ZDOTDIR:-$HOME}/.zplug/repos/sorin-ionescu/prezto/modules/autosuggestions/init.zsh" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zplug/repos/sorin-ionescu/prezto/modules/autosuggestions/init.zsh"
+fi
+
 #
 #  # Customize to your needs...
 #
@@ -25,4 +29,3 @@ source $DOTFILES_DIR/shell_key_bind.zsh
 source $DOTFILES_DIR/zplug_init.zsh
 source $DOTFILES_DIR/anyframe_init.zsh
 source $DOTFILES_DIR/prompt.zsh
-
