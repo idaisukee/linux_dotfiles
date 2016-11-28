@@ -12,3 +12,5 @@ fi
 export SRC=$PRD/src
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 source $DOTDIR/rbenv.sh
+
+source $DOTDIR/.xprofile
