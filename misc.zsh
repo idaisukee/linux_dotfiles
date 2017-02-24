@@ -16,7 +16,6 @@ setopt share_history
 zstyle ':completion:*:default' menu select=1
 
 export PATH="${SRC}/util:${PATH}"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 function _dabbrev_from_pane() {
     local sources
