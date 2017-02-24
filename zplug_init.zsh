@@ -8,5 +8,6 @@ then
    zplug "zsh-users/zaw"
    zplug "modules/autosuggestions", from:prezto
    zplug "modules/command-not-found", from:prezto
+   zplug "modules/directory", from:prezto
    zplug load
 fi
