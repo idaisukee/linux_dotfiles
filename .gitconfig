@@ -28,6 +28,8 @@
 	unstage = reset HEAD
 	control = add
 	uncontrol = rm --cached
+	sa = stage -A
+	su = stage -u
 
 [color]
 	status = auto
