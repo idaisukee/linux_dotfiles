@@ -105,14 +105,6 @@ function pr(){
 function gc(){
 	str=$1
 	arg="g "$str
-	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb)
-	echo $out
-}
-
-
-function gcc(){
-	str=$1
-	arg="g "$str
 	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb -c)
 	echo $out
 }
