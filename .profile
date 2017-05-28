@@ -17,4 +17,7 @@ source $DOTDIR/rbenv.sh
 export PATH=$HOME/.phpenv/bin:$PATH
 eval "$(phpenv init -)"
 
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
 source $DOTDIR/.xprofile
