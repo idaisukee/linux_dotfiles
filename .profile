@@ -17,7 +17,13 @@ source $DOTDIR/rbenv.sh
 export PATH=$HOME/.phpenv/bin:$PATH
 eval "$(phpenv init -)"
 
+# cf. http://qiita.com/luckypool/items/f1e756e9d3e9786ad9ea
+
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
+for D in `ls $HOME/.anyenv/envs`
+do
+  export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
+done
 
 source $DOTDIR/.xprofile
