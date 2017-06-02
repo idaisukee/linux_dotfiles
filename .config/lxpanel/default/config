@@ -1,4 +1,0 @@
-[Command]
-FileManager=bean_openfm %s
-Terminal=x-terminal-emulator
-Logout=openbox --exit
