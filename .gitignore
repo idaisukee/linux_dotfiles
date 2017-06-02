@@ -3,3 +3,4 @@
 const
 .config/*
 !.config/awesome
+!.config/peco
