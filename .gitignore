@@ -5,3 +5,4 @@ const
 !.config/awesome
 !.config/peco
 !.config/sakura
+!.config/heroku
