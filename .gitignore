@@ -2,7 +2,6 @@
 .zsh_history
 const
 .config/*
-!.config/awesome
 !.config/peco
 !.config/sakura
 !.config/heroku
