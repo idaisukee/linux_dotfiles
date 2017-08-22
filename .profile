@@ -12,11 +12,6 @@ fi
 export SRC=$PRD/src
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-source $DOTDIR/rbenv.sh
-
-export PATH=$HOME/.phpenv/bin:$PATH
-eval "$(phpenv init -)"
-
 # cf. http://qiita.com/luckypool/items/f1e756e9d3e9786ad9ea
 
 export PATH="$HOME/.anyenv/bin:$PATH"
