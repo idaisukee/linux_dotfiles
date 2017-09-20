@@ -1,0 +1,2 @@
+deb     [arch=amd64] http://emacs.secretsauce.net unstable main
+deb-src [arch=amd64] http://emacs.secretsauce.net unstable main
