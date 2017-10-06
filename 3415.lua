@@ -122,7 +122,7 @@ reload_rc_clock()
 
 
 function reload_pow()
-   pow.text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
+   pow.text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'") ..  execute_command("upower -d | grep time | ruby -F'' -ane 'print $F[-2] + $F[-1][0]'")
 end
 
 
