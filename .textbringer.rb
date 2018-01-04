@@ -53,6 +53,12 @@ def set_mode_line
 	Face.define :ff, reverse: false, background: Color[rand(255)], foreground: Color[rand(255)], underline: true
 	Face.define :fff, reverse: false, background: Color[rand(255)], foreground: Color[rand(255)], underline: true
 end
+
+def set_white_space
+	Face.define :ff, reverse: false, foreground: Color[rand(255)], underline: true
+	Face.define :fff, reverse: false, foreground: Color[rand(255)], underline: true
+end
+
 class RubyMode
 	define_syntax :ff, / /
 	define_syntax :fff, /\t/
@@ -69,3 +75,4 @@ module Commands
 end
 
 GLOBAL_MAP.define_key(ikbd('M-g'), :set_mode_line)
+GLOBAL_MAP.define_key(ikbd('M-G'), :set_white_space)
