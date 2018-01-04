@@ -19,4 +19,6 @@ fonts-inconsolata \
 texlive-lang-cjk \
 xdvik-ja \
 texlive-fonts-recommended \
-texlive-fonts-extra
+texlive-fonts-extra \
+silversearcher-ag \
+jq
