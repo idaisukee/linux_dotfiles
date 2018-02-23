@@ -41,6 +41,14 @@
         "when": "inQuickOpen"
     },
     {
+        "key": "alt+j",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.previousEditor"
+    },
+    {
         "key": "ctrl+m",
         "command": "workbench.action.acceptSelectedQuickOpenItem",
         "when": "inQuickOpen"
@@ -72,7 +80,13 @@
     },
     {
         "key": "ctrl+,",
-        "command": "editor.action.clipboardCopyAction"
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+m",
@@ -91,11 +105,6 @@
     {
         "key": "ctrl+=",
         "command": "workbench.action.gotoLine"
-    },
-    {
-        "key": "B",
-        "command": "type",
-        "args": {"text": "b"}
     },
     {
         "key": "ctrl+p",
