@@ -1,0 +1,104 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+      "key": "ctrl+a",
+      "command": "cursorHome"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "cursorEnd"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "cursorLeft"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorDown"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "cursorUp"
+    },
+    {
+        "key": "alt+h",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "alt+t",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.acceptSelectedQuickOpenItem",
+        "when": "inQuickOpen"
+      },
+
+    {
+        "key": "ctrl+n",
+        "command": "cursorRight"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "type",
+        "args": {
+            "text": "\n"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "deleteLeft"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "deleteRight"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "acceptSelectedSuggestionOnEnter",
+        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+      },
+    {
+       "key": "alt+m",
+       "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "B",
+        "command": "type",
+        "args": {"text": "b"}
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    }
+]
