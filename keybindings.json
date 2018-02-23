@@ -72,7 +72,8 @@
     },
     {
         "key": "ctrl+b",
-        "command": "deleteLeft"
+        "command": "deleteLeft",
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+r",
