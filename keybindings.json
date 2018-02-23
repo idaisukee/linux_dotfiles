@@ -1,75 +1,64 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    {
-      "key": "ctrl+a",
-      "command": "cursorHome"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "cursorEnd"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "cursorLeft"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "cursorDown"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "cursorUp"
-    },
-    {
-        "key": "alt+h",
-        "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "alt+t",
-        "command": "selectPrevSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "alt+h",
-        "command": "workbench.action.quickOpenSelectNext",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "alt+t",
-        "command": "workbench.action.quickOpenSelectPrevious",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "alt+j",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "alt+q",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "workbench.action.acceptSelectedQuickOpenItem",
-        "when": "inQuickOpen"
-      },
+    // cursor
 
     {
-        "key": "ctrl+n",
-        "command": "cursorRight"
+      "key": "ctrl+a",
+      "command": "cursorHome",
+      "when": "editorFocus"
     },
     {
-        "key": "ctrl+m",
-        "command": "type",
-        "args": {
-            "text": "\n"
-        },
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "cursorPageDown",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+s",
-        "command": "workbench.action.files.save"
+        "key": "ctrl+shift+o",
+        "command": "cursorBottom",
+        "when": "editorTextFocus"
     },
+    {
+        "key": "ctrl+e",
+        "command": "cursorPageUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "cursorEnd",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "cursorDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "cursorUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorRight",
+        "when": "editorTextFocus"
+    },
+
+    // editing
+
     {
         "key": "ctrl+b",
         "command": "deleteLeft",
@@ -85,9 +74,69 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        "key": "ctrl+.",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
         "key": "ctrl+p",
         "command": "editor.action.clipboardPasteAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // switching editors
+
+    {
+        "key": "alt+j",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.previousEditor"
+    },
+
+    // suggest
+
+    {
+        "key": "alt+h",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    {
+        "key": "alt+t",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+
+    // quickOpen
+
+    {
+        "key": "alt+h",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.acceptSelectedQuickOpenItem",
+        "when": "inQuickOpen"
+      },
+
+      {
+        "key": "ctrl+m",
+        "command": "type",
+        "args": {
+            "text": "\n"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "workbench.action.files.save"
     },
     {
         "key": "ctrl+m",
@@ -98,7 +147,7 @@
         "key": "ctrl+m",
         "command": "list.select",
         "when": "listFocus && !inputFocus"
-      },
+    },
     {
        "key": "alt+m",
        "command": "workbench.action.quickOpen"
@@ -108,7 +157,28 @@
         "command": "workbench.action.gotoLine"
     },
     {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
+        "key": "ctrl+/",
+        "command": "undo",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "actions.find"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findWidgetVisible"
+    }
+    // ctrl+g
+    {
+        "key": "ctrl+g",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.action.closeQuickOpen",
+        "when": "inQuickOpen"
     }
 ]
