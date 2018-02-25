@@ -130,7 +130,7 @@ end
 
 pow = wibox.widget.textbox()
 function reload_pow()
-   pow_text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'")
+   pow_text = execute_command("upower -d | grep percentage | head -1 | awk 'END {print $2}'") .. " " .. execute_command("upower -d | grep time | head -n 1 | ruby -F'' -ane 'print $F[-2] + $F[-1][0]'")
    pow:set_markup(pow_text)
 end
 reload_pow()
