@@ -11,6 +11,25 @@
         "key": "ctrl+a",
         "command": "-editor.action.selectAll"
     },
+{
+    "key": "shift+home",
+    "command": "cursorEnd"
+},
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "list.focusFirst",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorLineStart",
+        "when": "inQuickOpen"
+    },
     {
         "key": "ctrl+o",
         "command": "cursorPageDown",
@@ -27,7 +46,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+e",
+             "key": "ctrl+shift+e",
         "command": "cursorTop",
         "when": "editorTextFocus"
     },
