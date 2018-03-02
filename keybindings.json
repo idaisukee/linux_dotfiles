@@ -33,7 +33,7 @@
     {
         "key": "ctrl+o",
         "command": "cursorPageDown",
-        "when": "editorTextFocus"
+         "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+o",
