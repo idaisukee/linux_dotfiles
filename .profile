@@ -10,7 +10,6 @@ else
 fi
 
 export SRC=$PRD/src
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # cf. http://qiita.com/luckypool/items/f1e756e9d3e9786ad9ea
 
