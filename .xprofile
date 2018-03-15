@@ -11,3 +11,8 @@ else
     xmodmap $MAPDIR/hhkb_peripheral.map
     xmodmap $MAPDIR/hhkb_switch.map
 fi
+if [ $(uname -n) = 'x220a' ]
+
+then
+    xinput disable 10
+fi
