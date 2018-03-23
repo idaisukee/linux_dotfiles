@@ -16,3 +16,13 @@ if [ $(uname -n) = 'x220a' ]
 then
     xinput disable 10
 fi
+
+# export XMODIFIERS=@im=SCIM
+# export GTK_IM_MODULE="scim"
+# export QT_IM_MODULE="scim"
+# export NO_AT_BRIDGE=1
+# scim -d
+
+export XMODIFIERS="@im=ibus"
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
