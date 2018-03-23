@@ -26,6 +26,9 @@ alias p='cp'
 alias lo='locate'
 alias cl='column'
 alias vim='vi'
+alias P='. ~/.profile'
+alias X='. ~/.xprofile'
+alias k='sudo xkeysnail /home/ieremius/prd/src/Kitunekasaki.py/config.py'
 
 BLOG_LOCAL=$PRD/doc/weblog/single/
 BLOG_SRV=/home/daisuke/doc/webroot/weblog/single/
