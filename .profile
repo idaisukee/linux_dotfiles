@@ -19,4 +19,6 @@ do
   export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
 done
 
+export PATH="$PATH"":/home/ieremius/anaconda3/bin"
+
 source $DOTDIR/.xprofile
