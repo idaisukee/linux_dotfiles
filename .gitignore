@@ -5,5 +5,6 @@ const
 !.config/peco
 !.config/sakura
 !.config/heroku
+!.config/qtile
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
