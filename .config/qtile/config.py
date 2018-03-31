@@ -41,16 +41,16 @@ screens = [
         top = bar.Bar(
             [
                 widget.Prompt(),
-                widget.TaskList(highlight_method='border', borderwidth=1, border=deep_orange, rounded=False),
+                widget.TaskList(highlight_method='border', borderwidth=1, border=deep_orange, rounded=False, max_title_width=75),
                 widget.CPUGraph(width=40, graph_color=light_blue, border_color='000000'),
                 widget.MemoryGraph(width=40, graph_color=deep_blue, border_color='000000'),
                 widget.Clipboard(width=100),
                 widget.Systray(),
                 widget.Battery(
-                    font='Consolas',fontsize=12, margin_x=20),
+                    font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓'),
                 widget.Sep(),
-                widget.GenPollText(func=query, update_interval=0.8),
-                widget.Clock(format='%Y-%m-%dT%H:%M:%S+09:00', fontsize=12),
+                widget.GenPollText(func=query, update_interval=0.8, foreground=light_orange),
+                widget.Clock(format='%Y-%m-%dT%H:%M:%S+09:00', fontsize=12, foreground=light_blue),
             ],
             25,
         ),
