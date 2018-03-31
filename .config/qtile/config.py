@@ -40,12 +40,12 @@ screens = [
     Screen(
         top = bar.Bar(
             [
-                widget.Prompt(),
+                widget.Prompt(background=middle, foreground='0'*6, prompt='> '),
                 widget.TaskList(highlight_method='border', borderwidth=1, border=deep_orange, rounded=False, max_title_width=75),
                 widget.CPUGraph(width=40, graph_color=light_blue, border_color='000000'),
                 widget.MemoryGraph(width=40, graph_color=deep_blue, border_color='000000'),
-                widget.Clipboard(width=100),
-                widget.Systray(),
+                widget.Clipboard(width=100, background=light_orange, foreground='000000'),
+                widget.Systray(background=None),
                 widget.Battery(
                     font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓'),
                 widget.Sep(),
