@@ -19,6 +19,7 @@ keys = [
     Key([sup], "Left", lazy.group.prevgroup()),
     Key([sup], "Right", lazy.group.nextgroup()),
     Key( [sup], "space", lazy.layout.next()),
+    Key([sup], "semicolon", lazy.window.kill()),
     Key( [sup], "q", lazy.layout.down()),
     Key( [sup], "j", lazy.layout.up()),
 
