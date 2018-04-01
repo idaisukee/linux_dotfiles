@@ -12,7 +12,9 @@ import os
 sup = "mod4"
 keys = [
     Key([sup, "shift"], "e", lazy.spawn("emacs")),
+    Key([sup, "shift"], "f", lazy.spawn("firefox")),
     Key([sup, "shift"], "Return", lazy.spawn("sakura")),
+    Key([sup], "F1", lazy.spawn("sakura")),
     Key([sup], "F4", lazy.shutdown()),
     Key([sup], "F5", lazy.restart()),
     Key([sup], "F6", lazy.spawncmd()),
