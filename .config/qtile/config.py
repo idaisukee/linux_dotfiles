@@ -50,7 +50,7 @@ screens = [
                 widget.Clipboard(width=100, background=light_orange, foreground='000000'),
                 widget.Systray(background=None),
                 widget.Battery(
-                    font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓'),
+                    font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓', update_delay=30),
                 widget.Sep(),
                 widget.GenPollText(func=query, update_interval=0.8, foreground=light_orange),
                 widget.Clock(format='%Y-%m-%dT%H:%M:%S+09:00', fontsize=12, foreground=light_blue),
