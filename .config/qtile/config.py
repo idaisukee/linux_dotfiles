@@ -31,6 +31,10 @@ def query():
     result = os.popen("ruby /home/ieremius/prd/src/rdatetime/display_5.rb").read()
     return result
 
+def battery():
+    result = os.popen("upower -d | grep percentage | head -1 | awk 'END {print $2}'").read()
+    return result
+
 # from http://www.color-hex.com/color-palette/19117
 
 deep_blue = '69d2e7'
@@ -49,6 +53,7 @@ screens = [
                 widget.MemoryGraph(width=40, graph_color=deep_blue, border_color='000000'),
                 widget.Clipboard(width=100, background=light_orange, foreground='000000'),
                 widget.Systray(background=None),
+                widget.GenPollText(func=battery, update_interval=20, foreground=light_orange),
                 widget.Battery(
                     font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓', update_delay=30),
                 widget.Sep(),
