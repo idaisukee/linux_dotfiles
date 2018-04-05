@@ -32,7 +32,7 @@ def query():
     return result
 
 def battery():
-    result = os.popen("upower -d | grep percentage | head -1 | awk 'END {print $2}'").read()
+    result = os.popen("upower -d | grep percentage | head -1 | awk 'END {print $2}'").read().strip()
     return result
 
 # from http://www.color-hex.com/color-palette/19117
