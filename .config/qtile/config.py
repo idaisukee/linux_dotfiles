@@ -28,7 +28,11 @@ keys = [
 ]
 
 def query():
-    result = os.popen("ruby /home/ieremius/prd/src/rdatetime/display_5.rb").read()
+    result = os.popen("cd /home/ieremius/prd/src/rdatetime; ruby display_5.rb").read()
+    return result
+
+def query1():
+    result = os.popen("cd /home/ieremius/prd/src/Minatohasi.rb/bin; ruby now_5_5.rb").read()
     return result
 
 def battery():
@@ -57,6 +61,7 @@ screens = [
                 widget.Battery(
                     font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓', update_delay=30),
                 widget.Sep(),
+                widget.GenPollText(func=query1, update_interval=0.8, foreground=deep_blue),
                 widget.GenPollText(func=query, update_interval=0.8, foreground=light_orange),
                 widget.Clock(format='%Y-%m-%dT%H:%M:%S+09:00', fontsize=12, foreground=light_blue),
             ],
