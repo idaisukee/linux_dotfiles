@@ -2,77 +2,18 @@
 [
     // cursor
 
-    {
-      "key": "ctrl+a",
-      "command": "cursorHome",
-      "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "-editor.action.selectAll"
-    },
 {
     "key": "shift+home",
     "command": "cursorEnd"
 },
-    {
-        "key": "ctrl+a",
-        "command": "cursorHome",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "list.focusFirst",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "cursorLineStart",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+o",
-        "command": "cursorPageDown",
-         "when": "editorTextFocus"
-    },
     {
         "key": "ctrl+shift+o",
         "command": "cursorBottom",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+e",
-        "command": "cursorPageUp",
-        "when": "editorTextFocus"
-    },
-    {
              "key": "ctrl+shift+e",
         "command": "cursorTop",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "cursorEnd",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "cursorLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "cursorDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "cursorUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "cursorRight",
         "when": "editorTextFocus"
     },
 
@@ -140,32 +81,8 @@
         "when": "inQuickOpen"
     },
     {
-        "key": "ctrl+m",
-        "command": "workbench.action.acceptSelectedQuickOpenItem",
-        "when": "inQuickOpen"
-      },
-
-      {
-        "key": "ctrl+m",
-        "command": "type",
-        "args": {
-            "text": "\n"
-        },
-        "when": "editorTextFocus"
-    },
-    {
         "key": "alt+s",
         "command": "workbench.action.files.save"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "acceptSelectedSuggestionOnEnter",
-        "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "list.select",
-        "when": "listFocus && !inputFocus"
     },
     {
        "key": "alt+m",
@@ -188,16 +105,5 @@
         "key": "ctrl+s",
         "command": "editor.action.nextMatchFindAction",
         "when": "editorFocus && findWidgetVisible"
-    }
-    // ctrl+g
-    {
-        "key": "ctrl+g",
-        "command": "closeFindWidget",
-        "when": "editorFocus && findWidgetVisible"
-    },
-    {
-        "key": "ctrl+g",
-        "command": "workbench.action.closeQuickOpen",
-        "when": "inQuickOpen"
     }
 ]
