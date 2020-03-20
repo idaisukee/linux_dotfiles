@@ -42,3 +42,6 @@
 
 [push]
 	default = current
+
+[core]
+  quotepath = false

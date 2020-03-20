@@ -30,3 +30,4 @@ xhost +
 # export QT_IM_MODULE=fcitx
 # pkill -9 fcitx
 # fcitx
+

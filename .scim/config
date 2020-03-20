@@ -1,4 +1,4 @@
-/DefaultIMEngineFactory/en_US = ec43125f-f9d3-4a77-8096-de3a35290ba9
+/DefaultIMEngineFactory/en_US = 11cb2711-6225-49ca-bde4-472d2ca8aaef
 /DefaultIMEngineFactory/si_LK = IMEngine-M17N-si-wijesekera
 /DefaultIMEngineFactory/ta_IN = IMEngine-M17N-ta-tamil99
 /DefaultIMEngineFactory/zh_CN = 29ab338a-5a27-46b8-96cd-abbe86f17132
@@ -33,6 +33,15 @@
 /Hotkeys/FrontEnd/ValidKeyMask = Shift+Control+Alt+Meta+Super+Hyper+CapsLock
 /Hotkeys/IMEngine/List = ec43125f-f9d3-4a77-8096-de3a35290ba9
 /Hotkeys/IMEngine/ec43125f-f9d3-4a77-8096-de3a35290ba9 = Shift+F8
+/IMEngine/Anthy/ConvertToKatakanaKey = F7,q
+/IMEngine/Anthy/KanaLayoutFile = 
+/IMEngine/Anthy/KeyTheme = User defined
+/IMEngine/Anthy/KeyThemeFile = 
+/IMEngine/Anthy/NICOLALayoutFile = 
+/IMEngine/Anthy/PeriodStyle = Japanese
+/IMEngine/Anthy/PreeditStyle = Highlight
+/IMEngine/Anthy/RomajiThemeFile = 
+/IMEngine/Anthy/SpaceType = Half
 /IMEngine/RawCode/Locales = default
 /IMEngine/SKK/ASCII = l
 /IMEngine/SKK/ASCIIConvert = slash
@@ -40,7 +49,7 @@
 /IMEngine/SKK/AnnotHighlight = true
 /IMEngine/SKK/AnnotPos = AuxWindow
 /IMEngine/SKK/AnnotTarget = all
-/IMEngine/SKK/AnnotView = true
+/IMEngine/SKK/AnnotView = false
 /IMEngine/SKK/BackSpace = BackSpace,Control+h
 /IMEngine/SKK/Backward = Left,Control+b,Up
 /IMEngine/SKK/Cancel = Control+g,Escape
@@ -48,7 +57,7 @@
 /IMEngine/SKK/CompletionBack = period
 /IMEngine/SKK/Convert = space
 /IMEngine/SKK/Delete = Delete,Control+d
-/IMEngine/SKK/DictListSize = 4
+/IMEngine/SKK/DictListSize = 6
 /IMEngine/SKK/End = End,Control+e
 /IMEngine/SKK/Forward = Right,Control+f,Down
 /IMEngine/SKK/HalfKatakana = 
@@ -86,12 +95,12 @@
 /Panel/Gtk/ToolBar/AlwaysShow = false
 /Panel/Gtk/ToolBar/AutoSnap = true
 /Panel/Gtk/ToolBar/HideTimeout = 2
-/Panel/Gtk/ToolBar/POS_X = 1198
-/Panel/Gtk/ToolBar/POS_Y = 737
+/Panel/Gtk/ToolBar/POS_X = 1144
+/Panel/Gtk/ToolBar/POS_Y = 256
 /Panel/Gtk/ToolBar/ShowFactoryIcon = true
 /Panel/Gtk/ToolBar/ShowFactoryName = true
 /Panel/Gtk/ToolBar/ShowHelpIcon = true
 /Panel/Gtk/ToolBar/ShowMenuIcon = true
 /Panel/Gtk/ToolBar/ShowSetupIcon = true
 /Panel/Gtk/ToolBar/ShowStickIcon = false
-/UpdateTimeStamp = 1535806551:250733
+/UpdateTimeStamp = 1577635383:302489
