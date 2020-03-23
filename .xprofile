@@ -2,7 +2,7 @@ MAPDIR=$HOME/maps
 
 if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40d' -o $(uname -n) = 'x220a' ]
 then
-    sh map_x40.sh
+    xmodmap $HOME/maps/vortex_core.map
 else
     sh map_hhkb.sh
 fi
