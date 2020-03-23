@@ -5,7 +5,7 @@
 /DefaultIMEngineFactory/zh_HK = 5da9d4ff-ccdd-45af-b1a5-7bd4ac0aeb5f
 /DefaultIMEngineFactory/zh_SG = 05235cfc-43ce-490c-b1b1-c5a2185276ae
 /DefaultIMEngineFactory/zh_TW = fcff66b6-4d3e-4cf2-833c-01ef66ac6025
-/FrontEnd/IMOpenedByDefault = false
+/FrontEnd/IMOpenedByDefault = true
 /FrontEnd/OnTheSpot = true
 /FrontEnd/SharedInputMethod = true
 /FrontEnd/Socket/ConfigReadOnly = false
@@ -14,7 +14,7 @@
 /FrontEnd/X11/Dynamic = false
 /FrontEnd/X11/OnTheSpot = true
 /FrontEnd/X11/ServerName = SCIM
-/Hotkeys/FrontEnd/NextFactory = Henkan
+/Hotkeys/FrontEnd/NextFactory = Henkan,Shift+F9
 /Hotkeys/FrontEnd/NextFactory/zh_CN = Control+Alt+Down,Shift+Control+KeyRelease+Shift_L,Shift+Control+KeyRelease+Shift_R
 /Hotkeys/FrontEnd/NextFactory/zh_HK = Control+Alt+Down,Shift+Control+KeyRelease+Shift_L,Shift+Control+KeyRelease+Shift_R
 /Hotkeys/FrontEnd/NextFactory/zh_SG = Control+Alt+Down,Shift+Control+KeyRelease+Shift_L,Shift+Control+KeyRelease+Shift_R
@@ -27,7 +27,7 @@
 /Hotkeys/FrontEnd/PreviousFactory/zh_SG = Control+Alt+Up,Shift+Control+KeyRelease+Control_L,Shift+Control+KeyRelease+Control_R
 /Hotkeys/FrontEnd/PreviousFactory/zh_TW = Control+Alt+Up,Shift+Control+KeyRelease+Control_L,Shift+Control+KeyRelease+Control_R
 /Hotkeys/FrontEnd/ShowFactoryMenu = Shift+F10
-/Hotkeys/FrontEnd/Trigger = Shift+F9,Muhenkan
+/Hotkeys/FrontEnd/Trigger = Muhenkan,Shift+F6
 /Hotkeys/FrontEnd/Trigger/ja_JP = Zenkaku_Hankaku,Alt+grave,Control+space
 /Hotkeys/FrontEnd/Trigger/ko_KR = Alt+Alt_L+KeyRelease,Shift+space,Control+space,Hangul
 /Hotkeys/FrontEnd/ValidKeyMask = Shift+Control+Alt+Meta+Super+Hyper+CapsLock
@@ -103,4 +103,4 @@
 /Panel/Gtk/ToolBar/ShowMenuIcon = true
 /Panel/Gtk/ToolBar/ShowSetupIcon = true
 /Panel/Gtk/ToolBar/ShowStickIcon = false
-/UpdateTimeStamp = 1584878322:162766
+/UpdateTimeStamp = 1584964040:221357
