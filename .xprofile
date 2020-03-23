@@ -2,14 +2,9 @@ MAPDIR=$HOME/maps
 
 if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40d' -o $(uname -n) = 'x220a' ]
 then
-    xmodmap $MAPDIR/central.map
-    xmodmap $MAPDIR/x40_peripheral.map
-    xmodmap $MAPDIR/x40_modifier.map
-    xmodmap $MAPDIR/x40_switch.map
+    sh map_x40.sh
 else
-    xmodmap $MAPDIR/central.map
-    xmodmap $MAPDIR/hhkb_peripheral.map
-    xmodmap $MAPDIR/hhkb_switch.map
+    sh map_hhkb.sh
 fi
 if [ $(uname -n) = 'x220a' ]
 
@@ -30,4 +25,3 @@ xhost +
 # export QT_IM_MODULE=fcitx
 # pkill -9 fcitx
 # fcitx
-
