@@ -16,7 +16,7 @@ keys = [
     Key([sup, "shift"], "f", lazy.spawn("firefox")),
     Key([sup, "shift"], "Return", lazy.spawn("sakura")),
     Key([sup], "F1", lazy.spawn("sakura -x byobu")),
-    Key([sup], "F2", lazy.spawn("sakura -x byobu")),
+    Key([sup], "F2", lazy.spawn("sakura")),
     Key([sup], "F4", lazy.shutdown()),
     Key([sup], "F5", lazy.restart()),
     Key([sup], "F6", lazy.spawncmd()),
