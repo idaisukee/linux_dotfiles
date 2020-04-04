@@ -6,6 +6,7 @@ except ImportError:
     from libqtile.config import Key, Group
 
 from libqtile.manager import Click, Drag, Screen
+from libqtile.config import Group, Match
 
 import os
 
@@ -14,17 +15,17 @@ keys = [
     Key([sup, "shift"], "e", lazy.spawn("emacs")),
     Key([sup, "shift"], "f", lazy.spawn("firefox")),
     Key([sup, "shift"], "Return", lazy.spawn("sakura")),
-    Key([sup], "F1", lazy.spawn("sakura")),
+    Key([sup], "F1", lazy.spawn("sakura -x byobu")),
+    Key([sup], "F2", lazy.spawn("sakura -x byobu")),
     Key([sup], "F4", lazy.shutdown()),
     Key([sup], "F5", lazy.restart()),
     Key([sup], "F6", lazy.spawncmd()),
-    Key([sup], "Left", lazy.group.prevgroup()),
-    Key([sup], "Right", lazy.group.nextgroup()),
     Key( [sup], "space", lazy.layout.next()),
     Key([sup], "semicolon", lazy.window.kill()),
     Key( [sup], "q", lazy.layout.down()),
     Key( [sup], "j", lazy.layout.up()),
-
+    Key([sup, "shift"], "q", lazy.screen.prev_group()),
+    Key([sup, "shift"], "j", lazy.screen.next_group()),
 ]
 
 def query():
@@ -71,11 +72,11 @@ screens = [
 ]
 
 groups = [
-    Group("1"),
-    Group("2"),
-    Group("3"),
-    Group("4"),
-    Group("5"),
+    Group("1", matches=[Match(wm_class=["Sakura"])]),
+    Group("2", matches=[Match(wm_class=["Emacs"])]),
+    Group("3", matches=[Match(wm_class=["Firefox"])]),
+    Group("4", matches=[Match(wm_class=["Code"])]),
+    Group("5", matches=[Match(wm_class=["jumpfm"])]),
     Group("6"),
     Group("7"),
     Group("8"),
