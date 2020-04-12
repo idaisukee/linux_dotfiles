@@ -1,4 +1,4 @@
-/DefaultIMEngineFactory/en_US = 065d7b20-dda2-47fb-8f94-3306d9a25e56
+/DefaultIMEngineFactory/en_US = 11cb2711-6225-49ca-bde4-472d2ca8aaef
 /DefaultIMEngineFactory/si_LK = IMEngine-M17N-si-wijesekera
 /DefaultIMEngineFactory/ta_IN = IMEngine-M17N-ta-tamil99
 /DefaultIMEngineFactory/zh_CN = 29ab338a-5a27-46b8-96cd-abbe86f17132
@@ -103,4 +103,4 @@
 /Panel/Gtk/ToolBar/ShowMenuIcon = true
 /Panel/Gtk/ToolBar/ShowSetupIcon = true
 /Panel/Gtk/ToolBar/ShowStickIcon = false
-/UpdateTimeStamp = 1585622239:697998
+/UpdateTimeStamp = 1586005474:517202
