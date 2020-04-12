@@ -20,6 +20,7 @@ keys = [
     Key([sup], "F4", lazy.shutdown()),
     Key([sup], "F5", lazy.restart()),
     Key([sup], "F6", lazy.spawncmd()),
+    Key([sup], "F7", lazy.spawn("dmenu_run")),
     Key( [sup], "space", lazy.layout.next()),
     Key([sup], "semicolon", lazy.window.kill()),
     Key( [sup], "q", lazy.layout.down()),
