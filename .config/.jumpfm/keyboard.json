@@ -9,13 +9,13 @@
         "f4"
     ],
     "newFile": [
-        "shift+f4"
+        "shift+n"
     ],
     "rename": [
         "f2"
     ],
     "newFolder": [
-        "f7"
+        "shift+f"
     ],
     "move": [
         "shift+r"
@@ -138,10 +138,9 @@
         "ctrl+home"
     ],
     "zip": [
-        "z"
+        "shift+alt+z"
     ],
     "unzip": [
-        "u"
+        "shift+alt+u"
     ]
-    
 }
