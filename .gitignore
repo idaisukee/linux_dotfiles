@@ -9,3 +9,6 @@ const
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
 !.config/ranger
+!.config/.jumpfm
+.config/.jumpfm/plugins
+.config/.jumpfm/jumps.json
