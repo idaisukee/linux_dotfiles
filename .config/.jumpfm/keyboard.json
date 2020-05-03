@@ -75,37 +75,29 @@
         "s"
     ],
     "up": [
-        "up",
-        "]"
+        "up"
     ],
     "upSelect": [
-        "shift+up",
-        "shift+]"
+        "shift+up"
     ],
     "down": [
-        "down",
-        "["
+        "down"
     ],
     "downSelect": [
-        "shift+down",
-        "shift+[",
+        "shift+down",        
         "m"
     ],
     "pageUp": [
-        "pageup",
-        "ctrl+]"
+        "pageup"
     ],
     "pageUpSelect": [
-        "shift+pageup",
-        "shift+ctrl+]"
+        "shift+pageup"
     ],
     "pageDown": [
-        "pagedown",
-        "ctrl+["
+        "pagedown"
     ],
     "pageDownSelect": [
-        "shift+pagedown",
-        "shift+ctrl+["
+        "shift+pagedown"
     ],
     "goStart": [
         "home"
