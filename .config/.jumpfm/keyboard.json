@@ -1,0 +1,147 @@
+{
+    "copy": [
+        "shift+c"
+    ],
+    "del": [
+        "shift+alt+del"
+    ],
+    "edit": [
+        "f4"
+    ],
+    "newFile": [
+        "shift+f4"
+    ],
+    "rename": [
+        "f2"
+    ],
+    "newFolder": [
+        "f7"
+    ],
+    "move": [
+        "shift+r"
+    ],
+    "copyFilePath": [
+        "p"
+    ],
+    "copyDirPath": [
+        "shift+p"
+    ],
+    "showFilter": [
+        "f"
+    ],
+    "clearFilter": [
+        "esc"
+    ],
+    "hideFilter": [
+        "esc"
+    ],
+    "flatMode": [
+        "r"
+    ],
+    "fontSizeReset": [
+        "ctrl+0"
+    ],
+    "fontSizeInc": [
+        "ctrl+="
+    ],
+    "fontSizeDec": [
+        "ctrl+-"
+    ],
+    "toggleHiddenFiles": [
+        "h"
+    ],
+    "publicGist": [
+        "ctrl+g"
+    ],
+    "historyBack": [
+        "alt+left"
+    ],
+    "historyForward": [
+        "alt+right"
+    ],
+    "jump": [
+        "j"
+    ],
+    "switchPanel": [
+        "tab"
+    ],
+    "openToRight": [
+        "ctrl+right"
+    ],
+    "openToLeft": [
+        "ctrl+left"
+    ],
+    "swapPanels": [
+        "s"
+    ],
+    "up": [
+        "up",
+        "]"
+    ],
+    "upSelect": [
+        "shift+up",
+        "shift+]"
+    ],
+    "down": [
+        "down",
+        "["
+    ],
+    "downSelect": [
+        "shift+down",
+        "shift+[",
+        "m"
+    ],
+    "pageUp": [
+        "pageup",
+        "ctrl+]"
+    ],
+    "pageUpSelect": [
+        "shift+pageup",
+        "shift+ctrl+]"
+    ],
+    "pageDown": [
+        "pagedown",
+        "ctrl+["
+    ],
+    "pageDownSelect": [
+        "shift+pagedown",
+        "shift+ctrl+["
+    ],
+    "goStart": [
+        "home"
+    ],
+    "goStartSelect": [
+        "shift+home"
+    ],
+    "goEnd": [
+        "end"
+    ],
+    "goEndSelect": [
+        "shift+end"
+    ],
+    "selectAll": [
+        "ctrl+a"
+    ],
+    "deselectAll": [
+        "esc"
+    ],
+    "toggleSelection": [
+        "space"
+    ],
+    "enter": [
+        "enter"
+    ],
+    "back": [
+        "backspace"
+    ],
+    "homeDir": [
+        "ctrl+home"
+    ],
+    "zip": [
+        "z"
+    ],
+    "unzip": [
+        "u"
+    ]
+    
+}

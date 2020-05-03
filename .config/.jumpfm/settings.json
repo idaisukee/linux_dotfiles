@@ -1,0 +1,10 @@
+{
+    "timeFormat": "HH:mm:ss",
+    "dateFormat": "YYYY/MM/DD ",
+    "flatModeMaxSize": 5000,
+    "historyMaxSize": 20,
+    "jumpMaxDbSize": 300,
+    "jumpDbSaveInterval": 5,
+    "weatherLocation": "Shizuoka",
+    "editor": "code"
+}
