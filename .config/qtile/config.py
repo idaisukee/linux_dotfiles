@@ -49,28 +49,31 @@ middle = 'e0e4cc'
 light_orange = 'f38630'
 deep_orange = 'fa6901'
 
-screens = [
-    Screen(
-        top = bar.Bar(
-            [
-                widget.Prompt(background=middle, foreground='0'*6, prompt='> '),
-                widget.TaskList(highlight_method='border', borderwidth=1, border=deep_orange, rounded=False, max_title_width=75),
-                widget.CPUGraph(width=40, graph_color=light_blue, border_color='000000'),
-                widget.MemoryGraph(width=40, graph_color=deep_blue, border_color='000000'),
-                widget.Clipboard(width=100, background=light_orange, foreground='000000'),
-                widget.Systray(background=None),
-                widget.GenPollText(func=battery, update_interval=20, foreground=light_orange),
-                widget.Battery(
-                    font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓', update_delay=30),
-                widget.Sep(),
-                widget.GenPollText(func=query1, update_interval=0.8, foreground=deep_blue),
-                widget.GenPollText(func=query, update_interval=0.8, foreground=light_orange),
-                widget.Clock(format='%Y-%m-%dT%H:%M:%S+09:00', fontsize=12, foreground=light_blue),
-            ],
-            25,
+screens = []
+# range(0, 1) では外部 display に top bar が表示されなかったので range(0, 2) とした．原理は理解していない．
+for screen in range(0, 2):
+    screens.append(
+        Screen(
+            top = bar.Bar(
+                [
+                    widget.Prompt(background=middle, foreground='0'*6, prompt='> '),
+                    widget.TaskList(highlight_method='border', borderwidth=1, border=deep_orange, rounded=False, max_title_width=75),
+                    widget.CPUGraph(width=40, graph_color=light_blue, border_color='000000'),
+                    widget.MemoryGraph(width=40, graph_color=deep_blue, border_color='000000'),
+                    widget.Clipboard(width=100, background=light_orange, foreground='000000'),
+                    widget.Systray(background=None),
+                    widget.GenPollText(func=battery, update_interval=20, foreground=light_orange),
+                    widget.Battery(
+                        font='Consolas',fontsize=12, margin_x=20, foreground=deep_blue, charge_char='↑', discharge_char='↓', update_delay=30),
+                    widget.Sep(),
+                    widget.GenPollText(func=query1, update_interval=0.8, foreground=deep_blue),
+                    widget.GenPollText(func=query, update_interval=0.8, foreground=light_orange),
+                    widget.Clock(format='%Y-%m-%dT%H:%M:%S+09:00', fontsize=12, foreground=light_blue),
+                ],
+                25,
+            ),
         ),
-    ),
-]
+    )
 
 groups = [
     Group("1", matches=[Match(wm_class=["Sakura"])]),
