@@ -10,5 +10,6 @@ const
 !.config/user-dirs.locale
 !.config/ranger
 !.config/.jumpfm
+!.config/.byobu
 .config/.jumpfm/plugins
 .config/.jumpfm/jumps.json

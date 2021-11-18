@@ -1,0 +1,77 @@
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+### Begin Table definition.
+BEGIN_DEFINITION
+UUID = 11cb2711-6225-49ca-bde4-472d2ca8aaef
+SERIAL_NUMBER = 20040227
+ICON = /usr/share/scim/icons/CangJie.png
+NAME = CangJie 5
+NAME.zh_CN = 仓颉第五代
+NAME.zh_HK = 倉頡第五代
+NAME.zh_TW = 倉頡第五代
+LANGUAGES = zh_TW,zh_HK,zh_CN,zh_SG
+### AUTHOR =
+STATUS_PROMPT = 中
+KEYBOARD_LAYOUT = US_Default
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyz
+### KEY_END_CHARS =
+### SINGLE_WILDCARD_CHAR =
+MULTI_WILDCARD_CHAR = *
+SPLIT_KEYS = apostrophe
+COMMIT_KEYS = space
+FORWARD_KEYS = Return
+SELECT_KEYS = 1,2,3,4,5,6,7,8,9,0
+PAGE_UP_KEYS = Page_Up,comma,minus
+PAGE_DOWN_KEYS = Page_Down,period,equal
+### MODE_SWITCH_KEYS =
+### FULL_WIDTH_PUNCT_KEYS =
+### FULL_WIDTH_LETTER_KEYS =
+MAX_KEY_LENGTH = 5
+SHOW_KEY_PROMPT = FALSE
+AUTO_SELECT = FALSE
+AUTO_WILDCARD = TRUE
+AUTO_COMMIT = FALSE
+AUTO_SPLIT = TRUE
+AUTO_FILL = FALSE
+DISCARD_INVALID_KEY = FALSE
+DYNAMIC_ADJUST = FALSE
+ALWAYS_SHOW_LOOKUP = TRUE
+USE_FULL_WIDTH_PUNCT = TRUE
+DEF_FULL_WIDTH_PUNCT = TRUE
+USE_FULL_WIDTH_LETTER = TRUE
+DEF_FULL_WIDTH_LETTER = FALSE
+BEGIN_CHAR_PROMPTS_DEFINITION
+a 日
+b 月
+c 金
+d 木
+e 水
+f 火
+g 土
+h 竹
+i 戈
+j 十
+k 大
+l 中
+m 一
+n 弓
+o 人
+p 心
+q 手
+r 口
+s 尸
+t 廿
+u 山
+v 女
+w 田
+x 難
+y 卜
+z 符
+END_CHAR_PROMPTS_DEFINITION
+END_DEFINITION
+
+### Begin Table data.
+BEGIN_TABLE
+ana	時	0
+ombb	思札想	0
+END_TABLE
