@@ -7,7 +7,6 @@ else
     source map_hhkb.sh
 fi
 if [ $(uname -n) = 'x220a' ]
-
 then
     xinput disable 10
 fi
