@@ -25,12 +25,10 @@ alias md='mkdir '
 alias ls='ls -a'
 alias wi='wicd-cli'
 
-alias up='sudo apt-get update; sudo apt-get upgrade; sudo apt-get update; sudo apt-get upgrade; sudo apt-get update; sudo apt-get upgrade'
+alias up='for i in $(seq 3); do sudo apt update; sudo apt upgrade; done'
 
-alias sch='apt-cache search'
-alias schb='apt-cache -t "wheezy-backports" search'
-alias itl='sudo apt-get install'
-alias itlb='sudo apt-get -t "wheezy-backports" install'
+alias sch='apt search'
+alias itl='sudo apt install'
 
 alias cb='xsel --clipboard --input'
 
