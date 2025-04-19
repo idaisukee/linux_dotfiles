@@ -1,6 +1,6 @@
 MAPDIR=$HOME/maps
 
-if [ `uname -n` = 'x40b' -o $(uname -n) = 'x40d' -o $(uname -n) = 'x220a' ]
+if [ $(uname -n) = 'x40b' -o $(uname -n) = 'x40d' -o $(uname -n) = 'x220a' ]
 then
     xmodmap $HOME/maps/vortex_core.map
 else
