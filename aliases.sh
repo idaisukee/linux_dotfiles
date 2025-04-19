@@ -1,11 +1,5 @@
 source $HOME/linux_dotfiles/tmp_aliases.sh
 
-if [ `uname` = Darwin ]
-then
-		alias l='ls -laG'
-else
-		alias l='ls -laF --color'
-fi
 alias a='head -n'
 alias c='cat'
 alias v='vim'
