@@ -1,5 +1,3 @@
-source $HOME/linux_dotfiles/tmp_aliases.sh
-
 alias a='head -n'
 alias c='cat'
 alias v='vim'
@@ -33,9 +31,6 @@ alias sch='apt-cache search'
 alias schb='apt-cache -t "wheezy-backports" search'
 alias itl='sudo apt-get install'
 alias itlb='sudo apt-get -t "wheezy-backports" install'
-
-
-alias mta='. /home/daisuke/linux_dotfiles/make_tmp_aliases.sh '
 
 alias cb='xsel --clipboard --input'
 
