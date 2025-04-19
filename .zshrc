@@ -23,7 +23,6 @@ source $DOTFILES_DIR/misc.zsh
 source $DOTFILES_DIR/shell_key_bind.zsh
 source $DOTFILES_DIR/zplug_init.zsh
 source $DOTFILES_DIR/anyframe_init.zsh
-source $DOTFILES_DIR/prompt.zsh
 source $DOTFILES_DIR/shell_key_bind.zsh
 
 eval "$(anyenv init -)"
