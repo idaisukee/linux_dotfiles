@@ -17,8 +17,6 @@ export QT_IM_MODULE="scim"
 export NO_AT_BRIDGE=1
 scim -d
 
-xhost +
-
 # export XMODIFIERS="@im=fcitx"
 # export GTK_IM_MODULE=fcitx
 # export QT_IM_MODULE=fcitx
