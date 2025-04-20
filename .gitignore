@@ -11,5 +11,6 @@ const
 !.config/ranger
 !.config/.jumpfm
 !.config/.byobu
+!.config/starship.toml
 .config/.jumpfm/plugins
 .config/.jumpfm/jumps.json

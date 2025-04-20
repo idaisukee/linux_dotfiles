@@ -1,0 +1,43 @@
+format = """
+[🭮](bg:black fg:bright-blue)\
+$username\
+$directory\
+$git_branch\
+$git_status\
+$time\
+[🭀](bg:black fg:bright-black)
+> 
+"""
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# You can also replace your username with a neat symbol like   or disable this
+# and use the os module below
+[username]
+show_always = true
+style_user = "bg:blue fg:white"
+style_root = "bg:#9A348E"
+format = '[$user🭦]($style)'
+disabled = false
+
+[directory]
+style = "bg:white fg:bright-blue"
+format = "[$path🭦]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = ""
+style = "bg:bright-blue fg:white"
+format = '[$symbol $branch🭦]($style)'
+
+[git_status]
+style = "bg:white fg:bright-black"
+format = '[$all_status$ahead_behind🭦]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:bright-black fg:white"
+format = '[$time ]($style)'
