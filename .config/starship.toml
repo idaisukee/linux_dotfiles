@@ -23,7 +23,7 @@ disabled = false
 
 [directory]
 style = "bg:white fg:bright-blue"
-format = "[$path]($style)"
+format = "[ $path]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
