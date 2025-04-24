@@ -33,56 +33,6 @@ alias itl='sudo apt install'
 
 alias cb='xsel --clipboard --input'
 
-
-
-function power(){upower -d | grep percentage | head -1 | awk 'END {print $2}'}
-alias pow=power
-
-function newest(){ls -clt | sed -E 's/\s+/ /g' | cut -f 9 -d ' ' | sed -E '/^\.+$/d' | sed -E '/^$/d' | head -n 1}
-
-function current(){
-	git branch --contains |
-		cut -d ' ' -f 2
-}
-
-
-function times(){
-	int=$1
-	command=$2
-	for i in $(seq 1 $int)
-	do
-		eval $command
-	done
-}
-
-function pr(){
-	str=$1
-	arg="pr "$str
-	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb)
-	echo $out
-}
-
-
-function gc(){
-	str=$1
-	arg="g "$str
-	out=$(echo $arg | ruby $SRC/rdatetime/convert.rb -c)
-	echo $out
-}
-
-
-function rd(){
-	str=$1
-	out=$(echo $str | ruby $SRC/rdatetime/rc_ajd_to_gc.rb)
-	echo $out
-}
-
-function itex(){
-	file=$1
-	uplatex $file
-	dvipdfmx $file
-}
-
 mod_dir=$HOME/.zplug/repos/sorin-ionescu/prezto/modules/archive/functions
 alias lsarchive="zsh $mod_dir/lsarchive"
 alias unarchive="zsh $mod_dir/unarchive"
