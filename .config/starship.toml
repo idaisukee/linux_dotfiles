@@ -5,7 +5,7 @@ $directory\
 $git_branch\
 $git_status\
 $time\
-[🭡](bg:none fg:bright-black)
+[🭡](bg:none fg:color_2)
 > 
 """
 
@@ -17,41 +17,35 @@ $time\
 palette = 'ieremii'
 
 [palettes.ieremii]
-color_fg0 = '#fbf1c7'
-color_bg1 = '#3c3836'
-color_bg3 = '#665c54'
-color_blue = '#458588'
-color_aqua = '#689d6a'
-color_green = '#98971a'
-color_orange = '#d65d0e'
-color_purple = '#b16286'
-color_red = '#cc241d'
-color_yellow = '#d79921'
+color_0 = '#190faa'
+color_1 = '#eef4f6'
+color_2 = '#3388bd'
+color_3 = '#010005'
 
 [username]
 show_always = true
-style_user = "bg:blue fg:bright-gray"
+style_user = "bg:color_0 fg:color_1"
 style_root = "bg:#9A348E"
 format = '[ $user 🭅]($style)'
 disabled = false
 
 [directory]
-style = "bg:bright-gray fg:bright-blue"
+style = "bg:color_1 fg:color_2"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:bright-blue fg:gray"
+style = "bg:color_2 fg:color_1"
 format = '[🭐  $symbol $branch  🭅]($style)'
 
 [git_status]
-style = "bg:gray fg:blue"
+style = "bg:color_1 fg:color_2"
 format = '[ $all_status$ahead_behind ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:blue fg:white"
+style = "bg:color_2 fg:color_1"
 format = '[🭐 $time ]($style)'
