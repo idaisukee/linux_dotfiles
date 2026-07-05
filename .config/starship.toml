@@ -30,28 +30,28 @@ color_yellow = '#d79921'
 
 [username]
 show_always = true
-style_user = "bg:color_aqua fg:color_fg0"
+style_user = "bg:blue fg:bright-gray"
 style_root = "bg:#9A348E"
 format = '[ $user 🭅]($style)'
 disabled = false
 
 [directory]
-style = "bg:color_fg0 fg:color_blue"
+style = "bg:bright-gray fg:bright-blue"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_blue fg:color_green"
+style = "bg:bright-blue fg:gray"
 format = '[🭐  $symbol $branch  🭅]($style)'
 
 [git_status]
-style = "bg:color_green fg:color_blue"
+style = "bg:gray fg:blue"
 format = '[ $all_status$ahead_behind ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:color_blue fg:color_aqua"
+style = "bg:blue fg:white"
 format = '[🭐 $time ]($style)'
