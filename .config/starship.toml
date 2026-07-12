@@ -17,35 +17,35 @@ $time\
 palette = 'ieremii'
 
 [palettes.ieremii]
-color_0 = '#190faa'
-color_1 = '#eef4f6'
-color_2 = '#3388bd'
-color_3 = '#010005'
+color_0 = 'blue'
+color_1 = 'white'
+color_2 = 'yellow'
+color_3 = 'black'
 
 [username]
 show_always = true
 style_user = "bg:color_0 fg:color_1"
 style_root = "bg:#9A348E"
-format = '[ $user ]($style)'
+format = '[ $user ]($style)'
 disabled = false
 
 [directory]
 style = "bg:color_1 fg:color_2"
-format = "[ $path ]($style)"
+format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
 style = "bg:color_2 fg:color_1"
-format = '[  $symbol $branch  ]($style)'
+format = '[  $symbol $branch  ]($style)'
 
 [git_status]
 style = "bg:color_1 fg:color_2"
-format = '[ $all_status$ahead_behind ]($style)'
+format = '[ $all_status$ahead_behind ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:color_2 fg:color_1"
-format = '[ $time ]($style)'
+style = "bg:color_2 fg:color_3"
+format = '[ $time ]($style)'
