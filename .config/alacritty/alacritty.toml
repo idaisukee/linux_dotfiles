@@ -1,0 +1,22 @@
+general.live_config_reload = true
+
+general.import = [
+   "~/prd/src/linux_dotfiles/.config/alacritty/ohohama.toml"
+]
+
+[window]
+dimensions = { columns = 200, lines = 60 }
+padding = { x = 8, y = 4 }
+opacity = 100
+
+[cursor]
+style = "Beam"
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[font]
+size = 14.0
+offset = { x = 0, y = 2 }
+normal = { family = "Hack Nerd Font", style = "Regular" }

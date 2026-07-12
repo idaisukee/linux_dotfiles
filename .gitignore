@@ -12,5 +12,6 @@ const
 !.config/.jumpfm
 !.config/.byobu
 !.config/starship.toml
+!.config/alacritty
 .config/.jumpfm/plugins
 .config/.jumpfm/jumps.json
