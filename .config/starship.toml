@@ -7,7 +7,7 @@ $directory\
 $git_branch\
 $git_status\
 $time\
-[](bg:none fg:color_2)
+[ ](bg:none fg:color_1)
 > 
 """
 
@@ -49,5 +49,5 @@ format = '[ $all_status$ahead_behind ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:color_2 fg:color_3"
+style = "bg:color_2 fg:color_1"
 format = '[ $time ]($style)'
