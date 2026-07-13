@@ -18,5 +18,5 @@ multiplier = 3
 
 [font]
 size = 14.0
-offset = { x = 0, y = 2 }
+offset = { x = 2, y = 1 }
 normal = { family = "Hack Nerd Font", style = "Regular" }
