@@ -1,5 +1,7 @@
 format = """
-[](bg:blue fg:white)\
+[](bg:black fg:white)\
+[ ](bg:white fg:blue)\
+[](bg:blue fg:white)\
 $username\
 $directory\
 $git_branch\
