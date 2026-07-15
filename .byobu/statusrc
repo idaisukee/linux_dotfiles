@@ -76,6 +76,3 @@
 # Set this to zero to hide seconds int the time display
 # Default 1
 #TIME_SECONDS=0
-
-date=0
-time=0
