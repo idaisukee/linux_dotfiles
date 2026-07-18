@@ -1,11 +1,11 @@
 format = """
 [](bg:blue fg:white)\
-$username\
-[ $directory ](bg:color_1 fg:color_2)\
-$git_branch\
-$git_status\
-$time\
-[ ](bg:none fg:color_1)
+[$username ](bg:color_0 fg:color_1)\
+[$directory ](bg:color_1 fg:color_2)\
+[$git_branch ](bg:color_2 fg:color_1)\
+[$git_status ](bg:color_1 fg:color_2)\
+[$time ](bg:color_2 fg:color_1)\
+[  ](bg:color_1 fg:color_0)
 > 
 """
 
@@ -26,25 +26,22 @@ color_3 = 'black'
 show_always = true
 style_user = "bg:color_0 fg:color_1"
 style_root = "bg:#9A348E"
-format = '[ $user ]($style)'
+format = '[ $user](none)'
 disabled = false
 
 [directory]
-format = "[$path](none)"
+format = "[ $path](none)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_2 fg:color_1"
-format = '[  $symbol $branch  ]($style)'
+format = '[ $symbol $branch](none)'
 
 [git_status]
-style = "bg:color_1 fg:color_2"
-format = '[ $all_status$ahead_behind ]($style)'
+format = '[ $all_status$ahead_behind](none)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:color_2 fg:color_1"
-format = '[ $time ]($style)'
+format = '[ $time](none)'
