@@ -1,6 +1,4 @@
 format = """
-[](bg:black fg:white)\
-[ ](bg:white fg:blue)\
 [](bg:blue fg:white)\
 $username\
 $directory\
