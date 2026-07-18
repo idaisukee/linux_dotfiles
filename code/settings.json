@@ -1,0 +1,20 @@
+{
+    "editor.fontFamily": "Hack Nerd Font Mono",
+    "vim.useSystemClipboard": true,
+    "remote.autoForwardPortsSource": "hybrid",
+    "workbench.editor.decorations.colors": false,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "workbench.colorTheme": "Ohohama",
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilotcli:",
+    "git-graph.graph.colours": [
+	    "#0d47a1",
+	    "#1976d2",
+	    "#2196f3",
+	    "#1565c0",
+    	"#e6edf9",
+    	"#1E88E5",
+        "#33A7E4"
+    ]
+}
