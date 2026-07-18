@@ -3,3 +3,4 @@ source $DOTFILES_DIR/aliases.sh
 source $DOTFILES_DIR/misc.zsh
 
 eval "$(starship init zsh)"% 
+eval "$(dircolors $DOTFILES_DIR/.dircolors)"
