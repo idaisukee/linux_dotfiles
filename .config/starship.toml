@@ -1,7 +1,7 @@
 format = """
 [](bg:blue fg:white)\
 $username\
-$directory\
+[ $directory ](bg:color_1 fg:color_2)\
 $git_branch\
 $git_status\
 $time\
@@ -30,8 +30,7 @@ format = '[ $user ]($style)'
 disabled = false
 
 [directory]
-style = "bg:color_1 fg:color_2"
-format = "[ $path ]($style)"
+format = "[$path](none)"
 truncation_length = 3
 truncation_symbol = "…/"
 
