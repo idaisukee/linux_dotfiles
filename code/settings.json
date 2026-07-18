@@ -5,7 +5,6 @@
     "workbench.editor.decorations.colors": false,
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.minimumContrastRatio": 1,
-    "workbench.colorTheme": "Ohohama",
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilotcli:",
     "git-graph.graph.colours": [
@@ -17,5 +16,7 @@
     	"#1E88E5",
         "#33A7E4"
     ],
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Ohohama",
+    "editor.bracketPairColorization.enabled": true
 }
