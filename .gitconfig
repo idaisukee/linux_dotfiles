@@ -1,6 +1,6 @@
 [user]
 	email = hibariyashiki@gmail.com
-	name = Daisuke Inoue
+	name = Ieremius
 	editor = 'vim'
 
 [alias]
@@ -44,4 +44,4 @@
 	default = current
 
 [core]
-  quotepath = false
+  	quotepath = false
