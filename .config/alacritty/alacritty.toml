@@ -18,5 +18,19 @@ multiplier = 3
 
 [font]
 size = 14.0
-offset = { x = 2, y = 1 }
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = -1 }
 normal = { family = "Hack Nerd Font", style = "Regular" }
+builtin_box_drawing = true
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
