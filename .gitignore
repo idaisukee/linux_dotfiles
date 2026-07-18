@@ -12,3 +12,5 @@ const
 !.config/starship.toml
 !.config/alacritty
 !.config/bat
+yazi/flavors
+yazi/plugins

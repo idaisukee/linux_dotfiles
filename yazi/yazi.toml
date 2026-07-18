@@ -1,0 +1,15 @@
+[mgr]
+show_hidden = true
+
+[[opener.bat]]
+run = "batcat --paging=always %s"
+block = true
+desc = "bat"
+
+[[open.prepend_rules]]
+mime = "text/*"
+use = "bat"
+
+[[plugin.prepend_previewers]]
+mime = "text/*"
+run = 'piper -- batcat --color=always --paging=never --style=numbers "$1"'
