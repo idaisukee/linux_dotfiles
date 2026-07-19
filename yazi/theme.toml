@@ -9,9 +9,9 @@ marker_marked = { fg = "magenta", bg = "magenta" }
 marker_selected = { fg = "yellow", bg = "yellow" }
 count_copied = { fg = "black", bg = "green" }
 count_cut = { fg = "black", bg = "red" }
-count_selected = { fg = "black", bg = "yellow" }
+count_selected = { fg = "white", bg = "yellow" }
 border_symbol = "│"
-border_style = { fg = "bright-black" }
+border_stypie = { fg = "bright-black" }
 
 [tabs]
 active = { fg = "black", bg = "white", bold = true }
@@ -29,7 +29,7 @@ unset_alt = { fg = "red", bg = "black" }
 
 [indicator]
 parent = { underline = true, bg = "white", fg = "bright-blue" }
-current = { bg = "bright-blue", fg = "white" }
+current = { bg = "bright-white", fg = "magenta" }
 preview = { underline = true, fg = "white" }
 padding = { open = "█", close = "█" }
 
@@ -47,17 +47,17 @@ progress_normal = { fg = "magenta", bg = "black" }
 progress_error = { fg = "black", bg = "red" }
 
 [which]
-cols = 3
-mask = { bg = "black" }
-cand = { fg = "cyan", bold = true }
-rest = { fg = "blue" }
-desc = { fg = "blue", italic = true }
+cols = 1
+mask = { bg = "blue" }
+cand = { bg = "white", fg = "green", bold = true }
+rest = { fg = "white" }
+desc = { fg = "white" }
 separator = "  "
-separator_style = { fg = "blue" }
+separator_style = { fng = "bright-white" }
 
 [confirm]
 border = { fg = "cyan", bold = true }
-title = { fg = "cyan" }
+title = { fg = "bright-white" }
 body = { fg = "blue" }
 list = { fg = "white" }
 btn_yes = { fg = "white", bg = "black", bold = true }
@@ -66,9 +66,9 @@ btn_labels = ["  [Y]es  ", "  (N)o  "]
 
 [spot]
 border = { fg = "cyan", bold = true }
-title = { fg = "white" }
+title = { fg = "bright-white" }
 tbl_col = { fg = "blue" }
-tbl_cell = { fg = "cyan", bg = "black", bold = true }
+tbl_cell = { fg = "white", bg = "white", bold = true }
 
 [notify]
 title_info = { fg = "green" }
@@ -81,7 +81,7 @@ icon_error = ""
 [pick]
 border = { fg = "cyan", bold = true }
 active = { fg = "white", bold = true }
-inactive = { fg = "blue" }
+inactive = { fg = "white" }
 
 [input]
 border = { fg = "bright-blue", bold = true }
@@ -103,7 +103,7 @@ hovered = { fg = "magenta", bold = true }
 on = { fg = "cyan" }
 run = { fg = "magenta" }
 desc = { fg = "blue" }
-hovered = { bg = "black", bold = true }
+hovered = { bg = "white", bold = true }
 footer = { fg = "white", bg = "black" }
 
 [filetype]

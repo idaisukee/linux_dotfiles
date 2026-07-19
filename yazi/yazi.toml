@@ -13,3 +13,13 @@ use = "bat"
 [[plugin.prepend_previewers]]
 mime = "text/*"
 run = 'piper -- batcat --color=always --paging=never --style=numbers "$1"'
+
+[opener]
+code = [
+  { run = 'code "$@"', orphan = true }
+]
+
+[open]
+rules = [
+  { mime = "inode/directory", use = "code" },
+]
