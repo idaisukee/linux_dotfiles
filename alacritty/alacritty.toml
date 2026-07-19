@@ -1,7 +1,7 @@
 general.live_config_reload = true
 
 general.import = [
-   "~/prd/src/linux_dotfiles/.config/alacritty/ohohama.toml"
+   "~/prd/src/ohohama-alacritty/ohohama.toml"
 ]
 
 [window]
