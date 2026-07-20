@@ -22,5 +22,4 @@ fi
 
 . "$HOME/.cargo/env"
 
-export LANG=C.UTF-8
-unset LC_ALL
+export LC_ALL=C.UTF-8
