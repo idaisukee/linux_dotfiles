@@ -20,5 +20,5 @@
     {
         "key": "ctrl+=",
         "command": "workbench.action.gotoLine"
-    },
+    }
 ]

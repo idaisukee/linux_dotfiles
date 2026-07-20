@@ -8,15 +8,18 @@
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilotcli:",
     "git-graph.graph.colours": [
-	    "#0d47a1",
-	    "#1976d2",
-	    "#2196f3",
-	    "#1565c0",
-    	"#e6edf9",
-    	"#1E88E5",
+        "#0d47a1",
+        "#1976d2",
+        "#2196f3",
+        "#1565c0",
+        "#e6edf9",
+        "#1E88E5",
         "#33A7E4"
     ],
     "git.confirmSync": false,
-    "workbench.colorTheme": "Ohohama",
-    "editor.bracketPairColorization.enabled": true
+    "editor.bracketPairColorization.enabled": false,
+    "window.titleBarStyle": "custom",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Ohohama"
 }
