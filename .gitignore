@@ -1,6 +1,7 @@
 *.swp
 .zsh_history
 const
+*/.ssh-agent
 .config/*
 !.config/peco
 !.config/sakura
