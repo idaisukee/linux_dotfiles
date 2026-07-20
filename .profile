@@ -14,3 +14,17 @@ export SRC=$PRD/src
 export PATH="$PATH"":/home/ieremius/anaconda3/bin"
 
 source $DOTDIR/.xprofile
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+_byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
+
+export LC_ALL=C
+. "$HOME/.cargo/env"
