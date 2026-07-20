@@ -1,7 +1,3 @@
-MAPDIR=$HOME/maps
-DOTDIR=$HOME/linux_dotfiles
-
-
 if [ -e $HOME/prd ]
 then
     export PRD=$HOME/prd
@@ -10,9 +6,9 @@ else
 fi
 
 export SRC=$PRD/src
+DOTDIR=$SRC/linux_dotfiles
+MAPDIR=$DOTDIR
 
-
-source $DOTDIR/.xprofile
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -23,7 +19,8 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-_byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
 
-export LC_ALL=C
 . "$HOME/.cargo/env"
+
+export LANG=C.UTF-8
+unset LC_ALL
