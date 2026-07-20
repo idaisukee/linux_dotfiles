@@ -11,7 +11,6 @@ fi
 
 export SRC=$PRD/src
 
-export PATH="$PATH"":/home/ieremius/anaconda3/bin"
 
 source $DOTDIR/.xprofile
 
